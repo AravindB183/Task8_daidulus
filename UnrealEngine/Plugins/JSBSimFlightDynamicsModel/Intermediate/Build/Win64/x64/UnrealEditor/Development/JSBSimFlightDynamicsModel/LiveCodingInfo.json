@@ -1,0 +1,13 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.JSBSimFlightDynamicsModel.cpp.obj": [
+			"FDMTypes.gen.cpp.obj",
+			"JSBSimFlightDynamicsModel.init.gen.cpp.obj",
+			"JSBSimMovementComponent.gen.cpp.obj",
+			"JSBSimModule.cpp.obj",
+			"JSBSimMovementComponent.cpp.obj",
+			"UEGroundCallback.cpp.obj"
+		]
+	}
+}

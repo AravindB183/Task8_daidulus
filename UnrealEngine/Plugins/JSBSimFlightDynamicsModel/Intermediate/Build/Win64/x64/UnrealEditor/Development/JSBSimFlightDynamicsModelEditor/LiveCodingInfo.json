@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.JSBSimFlightDynamicsModelEditor.cpp.obj": [
+			"JSBSimModuleEditor.cpp.obj",
+			"JSBSimMovementCompVisualizer.cpp.obj"
+		]
+	}
+}

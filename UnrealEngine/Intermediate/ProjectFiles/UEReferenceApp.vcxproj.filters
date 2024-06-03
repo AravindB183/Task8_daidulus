@@ -1,0 +1,2167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\UEReferenceApp.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\UEReferenceApp.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\UEReferenceAppEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <None Include="..\..\CleanProject.bat" />
+    <None Include="..\..\CleanProject.sh" />
+    <None Include="..\..\LICENSE.txt" />
+    <None Include="..\..\README-Unix.md" />
+    <None Include="..\..\README.md" />
+    <None Include="..\..\UEReferenceApp.png" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel">
+      <UniqueIdentifier>{E7A19A72-D07C-3B14-8F71-D65975B9E841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source">
+      <UniqueIdentifier>{4E160D5C-6B10-3AF5-B2D4-D71F31E41DA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor">
+      <UniqueIdentifier>{97FBC866-544E-33E1-A97F-064B0CBA663E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\JSBSimFlightDynamicsModelEditor.Build.cs">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private">
+      <UniqueIdentifier>{FE873819-700C-3BB7-B207-FB86A28A992C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private\JSBSimModuleEditor.cpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private\JSBSimMovementCompVisualizer.cpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public">
+      <UniqueIdentifier>{908930F1-F15D-37EE-BBEE-020160FDC551}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public\JSBSimModuleEditor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public\JSBSimMovementCompVisualizer.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\JSBSimFlightDynamicsModel.uplugin">
+      <Filter>Plugins\JSBSimFlightDynamicsModel</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources">
+      <UniqueIdentifier>{C1C22383-3ECA-3890-AC72-FDC3A4DA24E5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\Icon128.png">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim">
+      <UniqueIdentifier>{A41F5D0C-8BFB-35E7-984D-3F2A677B0040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft">
+      <UniqueIdentifier>{9A0DFFEA-E667-34AA-8EEA-DC0F6AC27F36}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\aircraft_template.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737">
+      <UniqueIdentifier>{6B41A07E-04E4-363C-8C2B-20F64C1B6BB4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\737.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\cruise_init.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\cruise_steady_turn_init.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\rudder_kick_init.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8">
+      <UniqueIdentifier>{DCBF6AF8-FAC1-3ED6-9699-E9AA24386262}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\787-8.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\Authors.txt">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\README">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320">
+      <UniqueIdentifier>{8948ECB2-ADC7-3107-9D9D-99C94BB223AF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320\A320.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4">
+      <UniqueIdentifier>{95BECE18-CF89-345F-A343-86B2FD974859}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4\A4.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s">
+      <UniqueIdentifier>{7B6DC151-BB6D-3EBB-8298-D56426B83673}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\ah1s.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines">
+      <UniqueIdentifier>{E628A76A-62DF-360F-A0BC-8674BC802DAD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines\electric_1500hp.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines\electric_1hp_dummy.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems">
+      <UniqueIdentifier>{CC7C8533-649E-3C5C-BAA1-1B2EF715DF4C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\rotor_control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\steady_flight_data.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\trim_control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17">
+      <UniqueIdentifier>{16BD5A81-CADF-323F-9CD7-D312378B6F5B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\B17.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747">
+      <UniqueIdentifier>{1290E5E9-6451-30BF-9473-A8EB1CC0EA65}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\B747.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball">
+      <UniqueIdentifier>{BDC55E60-8188-3DB7-BA95-F8160C25749E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\ball.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\iss_orbit.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset00_v2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset01_v2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank">
+      <UniqueIdentifier>{A836E328-6207-3BDB-B3E4-1B9462F2128A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\blank.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314">
+      <UniqueIdentifier>{870F6E7D-8D27-3E1D-A918-0F093C0A0A56}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314\Boeing314.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130">
+      <UniqueIdentifier>{275CD800-E5F6-3D07-8846-ED35283AE06C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\C130.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p">
+      <UniqueIdentifier>{627ED000-4D67-3D79-8E34-11E71CEC4F89}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\c172p.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\README.flightmodel.c172p">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r">
+      <UniqueIdentifier>{AAF3CBA3-900E-3D6C-881E-9664478711DF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\c172r.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\README.c172r">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x">
+      <UniqueIdentifier>{83BD1C3F-CFE0-31C0-8DC0-B801284494AC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\c172ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\c172x.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\elevator_doublet_init.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\output.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset_at_rest.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182">
+      <UniqueIdentifier>{704077F2-DC3A-3892-94D9-E03ED53F6D3D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\c182.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\README.c182">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310">
+      <UniqueIdentifier>{54ED647D-8F41-34DD-83AE-EB575FAB36B9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\c310.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\c310ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\ellington.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\README.c310">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel">
+      <UniqueIdentifier>{13F2017D-7A05-301F-8E25-B6D67ADAEBE9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\README">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\sopwithCamel1F1jsb.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems">
+      <UniqueIdentifier>{95F2FE03-D53F-335C-9606-A95628E2DFE9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems\automixture.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems\crash-detect.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde">
+      <UniqueIdentifier>{DA2B9CA0-38A6-3155-96ED-A56C304FC0D5}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\Concorde.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6">
+      <UniqueIdentifier>{41E5A262-3727-3935-A267-315F4133BA06}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\DHC6.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\info.txt">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines">
+      <UniqueIdentifier>{49DBA9C8-0251-3EBF-B4BC-BA99005B244F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines\Propeller.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines\PT6A-27.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems">
+      <UniqueIdentifier>{B9BCEEC7-AC00-32AD-8A90-BBF594AEB241}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Conventional Controls.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Flaps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Landing Gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Propulsion.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1">
+      <UniqueIdentifier>{5CC95764-3F6B-3AED-9268-86DE527539AD}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\dr1.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems">
+      <UniqueIdentifier>{B33DF3A0-16E6-30ED-BFC9-14C2E8AE3122}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems\chocks.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems\pushback.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104">
+      <UniqueIdentifier>{150355C8-701B-38DF-8756-214407048E2B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\f104.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems">
+      <UniqueIdentifier>{33DE5C27-D7F8-3875-80A6-A0F47C385A59}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\armament.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\beacon.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\BLC.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\canopy.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\chute.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\crash-detect.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-pitch.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-roll.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-yaw.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\flaps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\NWS.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\radar.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\speedbrakes.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\tailhook.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15">
+      <UniqueIdentifier>{372C047F-5E55-3F42-94C5-CD625EB84D9C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15\f15.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16">
+      <UniqueIdentifier>{02E2EA90-16BA-3EE6-B2A4-26F211D77723}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\f16.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\README">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems">
+      <UniqueIdentifier>{6B422C5D-61A9-391B-8520-4FD02ADFC05A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems\hook.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems\pushback.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22">
+      <UniqueIdentifier>{BCDC90D2-9986-3CC7-B7B4-CB27B4D4CB5F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\f22.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\README">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\yf22.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450">
+      <UniqueIdentifier>{EB0E45D1-6EAC-3E05-8B64-7EF4C8634997}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Effectors.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\F450.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\FlightControl.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\initGrnd.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Mass.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Metrics.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Propulsion.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N">
+      <UniqueIdentifier>{FA8DDF6A-88A5-3E7D-82A7-60486494CA37}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\F4N-jsbsim.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\F4N.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines">
+      <UniqueIdentifier>{8A9B0FC0-38E8-36FA-BD0D-16C41BE0472C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines\direct.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines\J79-GE-11A.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C">
+      <UniqueIdentifier>{B933B422-4331-31D1-94D7-ED5EB2904095}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C\F80C.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100">
+      <UniqueIdentifier>{18DF42F6-E835-3A0E-958F-B837B34674EA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Fokker-F70.html">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\fokker100.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\fokker70.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\info.txt">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\xf100.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Systems">
+      <UniqueIdentifier>{A2770991-31E0-319A-9458-CD8C93EC49DF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Systems\pushback.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50">
+      <UniqueIdentifier>{AA81373F-8C4A-32BD-AFB8-C395E119CFEE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50\fokker50.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000">
+      <UniqueIdentifier>{F5479AAF-8E26-3367-B19F-57F6B02E7C0D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\airborne.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000apx.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts">
+      <UniqueIdentifier>{B72A61AF-EE45-3E45-9E9B-3B4C1FE8D38B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts\trim-cruise.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts\trim-cruise_ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246">
+      <UniqueIdentifier>{F2F5287B-06D0-3993-AA0E-5FBF30302D21}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\J246.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\LC39.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems">
+      <UniqueIdentifier>{DB069460-1A48-3359-8B2C-958C9809368F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246ControlSystem.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246FirstStageEffectors.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246GuidanceExecutive.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246SecondStageEffectors.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub">
+      <UniqueIdentifier>{13C31924-C96D-3ABB-924B-413FD2332B32}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\J3Cub.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines">
+      <UniqueIdentifier>{CD9D5421-CB7E-3542-98D0-4C8B9310AD78}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines\CM7445 MCCauley.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines\Continental A-65-8.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Systems">
+      <UniqueIdentifier>{37495C97-CFF4-3F84-A903-596A4513477B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Systems\Conventional Controls.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17">
+      <UniqueIdentifier>{B91C944E-9951-322E-B4E1-4B2B247DAD60}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\L17.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\navion.tsf">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410">
+      <UniqueIdentifier>{D0DCE005-5787-3E1A-B7CF-BEFB93B275F4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\L410.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\LM">
+      <UniqueIdentifier>{9CB667F5-DCA0-3CF2-8C23-C5CDE3E25133}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\LM\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\LM</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11">
+      <UniqueIdentifier>{E8F97445-1F48-3AB8-8FDB-ECE36DE7ACC6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11\MD11.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs">
+      <UniqueIdentifier>{DAE1858E-99BF-3665-ADA8-4ED4D497E577}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\minisgs.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82">
+      <UniqueIdentifier>{AE1F595F-87C7-38F3-94ED-F5A468FEA2DE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\mk82.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10">
+      <UniqueIdentifier>{79C71DEE-0832-3351-B48F-DA9B66916977}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\OV10.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d">
+      <UniqueIdentifier>{BF920B89-FDBC-33F6-B303-3492A4EE27BF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\p51d.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset4-00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines">
+      <UniqueIdentifier>{07EB1732-2431-3D14-AC21-9678B2095501}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines\P51prop.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines\Packard-V-1650-7.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems">
+      <UniqueIdentifier>{C9FA9521-DA4F-3992-8858-FC0139F9E34D}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\alpha-buffet.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\autothrottle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\compressability.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\crash-detect.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\electrical.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\mixture-control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\propulsion.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\weapons-weight.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28">
+      <UniqueIdentifier>{D5AF1D8F-C9C7-372B-BD5A-0E952DCBD80C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\pa28.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider">
+      <UniqueIdentifier>{04A5404F-347C-3159-928D-2CD1E4682CA7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\paraglider.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines">
+      <UniqueIdentifier>{FCC09B99-1A3B-3DA4-9861-66AFFD2A0E42}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines\DT_Propeller.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines\Polini_THOR80.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Systems">
+      <UniqueIdentifier>{4DFE2FA0-5D04-3EA3-A121-29F1C4037034}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Systems\Controls.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7">
+      <UniqueIdentifier>{FF8E68CB-60B2-37EE-8D5F-344EF93E0BBA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\pc7.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines">
+      <UniqueIdentifier>{FE7C3E86-4BAE-330D-B6FC-0F7BB0016853}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines\Propeller.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines\PT6A.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems">
+      <UniqueIdentifier>{77D7CBCC-0727-3C51-B5A6-D5037B568987}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Conventional Controls.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Flaps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Landing Gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim">
+      <UniqueIdentifier>{6A017A57-2D1D-3C9A-A167-29F7DCC08902}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\pogo-jsbsim.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines">
+      <UniqueIdentifier>{531A9B7C-1D1A-3166-AE33-8F680765811F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines\Pogo_prop.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines\YT40-A-16.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur">
+      <UniqueIdentifier>{4DE28E76-E617-3F14-BC63-1DC88F66E9D2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Pterosaur.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems">
+      <UniqueIdentifier>{87D0B6DC-B815-3607-ADB2-18BEE0D0240B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Landing Gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Ornithopter Controls.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Wing Motion.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS">
+      <UniqueIdentifier>{F136643F-1EEF-3EFA-AF23-60971DD570B7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\SGS.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126">
+      <UniqueIdentifier>{15635309-33B8-310C-99DF-83A6D8AFD1D4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126\sgs126.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233">
+      <UniqueIdentifier>{532FC1D4-604F-320D-8A77-201354841F60}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233\sgs233.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23">
+      <UniqueIdentifier>{EDF1127E-5AF0-3059-B21C-F7BE316E386B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\output.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset02.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset03.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Short_S23.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems">
+      <UniqueIdentifier>{CAC641CC-F8D1-3B55-AFD2-BE845B544825}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\datcom_aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\electrical.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\engines.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\flaps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\fuel-system.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\Short_S23-hydrodynamics.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\take-off-ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle">
+      <UniqueIdentifier>{796DDAA8-008D-33C7-8087-34AB9285A9FA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\Shuttle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout">
+      <UniqueIdentifier>{BE604D2B-B585-314A-A0C6-06AD95FF7FBA}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Submarine_Scout.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\takeoff.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems">
+      <UniqueIdentifier>{192FDC03-8ACC-3992-BA32-07C503CDCEED}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\air-and-gas-control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\gerris_aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\Submarine_Scout_crew_ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37">
+      <UniqueIdentifier>{0635D701-9A91-3F29-816F-8FB7E3DEBD25}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\T37.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38">
+      <UniqueIdentifier>{54F41E58-C934-382D-B6FD-15E2AD8BDE7A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\T38.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2">
+      <UniqueIdentifier>{D2C475BF-7C4A-3E53-A615-3CAE2E1C9395}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2\t6texan2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon">
+      <UniqueIdentifier>{9BB56F2C-1E7A-3262-B07B-6C596FFCBDC3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\balloon_log.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\reset10.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\weather-balloon.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903">
+      <UniqueIdentifier>{1945CB49-6CCA-356A-B401-906174FF46ED}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\README.wrightFlyer1903.html">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\wrightFlyer1903.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\wrightFlyer1905.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15">
+      <UniqueIdentifier>{00EC8232-E9B1-3677-B41F-DC6E50110524}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\reset01.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\X15.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\X15ap.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b">
+      <UniqueIdentifier>{246EF65E-8AB3-30E1-A596-E43E995E1F82}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\x24b.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70">
+      <UniqueIdentifier>{B6F9E626-2F72-355B-B6EC-78E01DEC5CF9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\XB-70.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT">
+      <UniqueIdentifier>{80E881A6-29CB-35CB-AEEB-B703738239AE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\INSTALL">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\reset00.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\ZLT-NT.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems">
+      <UniqueIdentifier>{6B89A8C7-DC16-3FFC-A544-BB7529D59FC3}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\air-and-gas-control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\datcom_aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\engine-control.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\gerris_aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\instrumentation.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine">
+      <UniqueIdentifier>{2DC04292-A4EB-37B8-9D85-C60F2C49F7EF}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\ah1s_rotor.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\ah1s_tail_rotor.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\AJ26-33A.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\AJ26-33_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\avco_lycoming_t53.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\BR-725.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\BR710.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CamelProp.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CF6-80C2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CFM56.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CFM56_5.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Clerget9B.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\direct.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\DJI_9450.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\DJI_E305.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\dowty-rotol-aero.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Dr1_propeller.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\dummy.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\electric147kW.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\electric_1mw.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO360C.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO470D.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO540AB1A5.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engRRMerlin61.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engRRMerlinXII.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engtm601.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_io320.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_O-200.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_PegasusXc.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_RRhawk.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Estes_E9.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\F100-PW-229.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\F119-PW-1.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\GE-CF6-80C2-B1F.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\HamiltonStd6243A-3.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J33-A-35.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J52.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J69-T25.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J79-GE-11A.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J85-GE-5.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\JT9D-3.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\LMdescent.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\LM_descent_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\MerlinV1650.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Oberursel-UrII.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Olympus593Mrk610.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\P51prop.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop30FP2B.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC10v.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC6v.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC8v.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propDA-R352_6-123-F_2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propHO-V373-D.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propHS139v.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_75in2f.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_81in2v.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_Clark_Y7570.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_deHavilland5000.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_generic2f.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_PT6.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_SSZ.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PT6A-27.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PT6A-68.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PW125B.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PW125BX.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\R-1820-97.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RB211-524.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RL10.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RL10_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RollsRoyce.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\s64_rotor.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SRB.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SRB_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SSME.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SSME_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\t56.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\t56_prop.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\T76.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Tay-620.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Tay-651.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\test_turbine.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\TRENT-900.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\trent_1000.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\twin_pratt_and_whitney_t73.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\vrtule2.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1903_engine.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1903_propellers.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1905_engine.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\WrightGR-2600.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\XLR99.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\xlr99_nozzle.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\YJ93-GE-3.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Zenoah_G-26A.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems">
+      <UniqueIdentifier>{508C167D-6978-3FD1-8F2F-86328189372E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\accelerometers.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\afcs.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\airship-mooring.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\airship_added_mass.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\alpha_buffet.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\Autopilot.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\BLC.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\catapult.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-pitch.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-roll.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-yaw.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\flaps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\gear.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\GNCUtilities.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\holdback.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hook.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamic-planing-floats.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamic-planing.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamics.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\jsb_glue.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\NWS.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\refuel.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\rpm_governor.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorBaro.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorGps.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorImu.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\speedbrakes.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\sperry-a2-autopilot.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\tail_wheel_lock.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\visual-reference-point-extensions.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel">
+      <UniqueIdentifier>{CBE2AC56-BA94-380A-8ECD-8983DCB4C739}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\JSBSimFlightDynamicsModel.Build.cs">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private">
+      <UniqueIdentifier>{8C3BBC1A-5B89-3ECB-91F0-1A45899476C5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\JSBSimModule.cpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\JSBSimMovementComponent.cpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\UEGroundCallback.cpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private</Filter>
+    </ClCompile>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public">
+      <UniqueIdentifier>{942EEA24-01A5-304D-8C43-1F0E3C0DDE9C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\FDMTypes.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\JSBSimModule.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\JSBSimMovementComponent.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\UEGroundCallback.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty">
+      <UniqueIdentifier>{B3BF83B7-57D0-3E0C-B6CA-7DA77D942F2B}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim.Build.cs">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim">
+      <UniqueIdentifier>{7F295759-6ABC-333F-98F8-D7D1EA73570E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\JSBSim_APL.xml">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include">
+      <UniqueIdentifier>{56850A57-3B30-3E7A-8CDC-5342F613B001}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\FGFDMExec.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\FGJSBBase.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\JSBSim_API.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib">
+      <UniqueIdentifier>{3F4544CE-AF28-3BC5-9DD9-3DE50556612B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Config.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Constants.hpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Geodesic.hpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\GeodesicLine.hpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Math.hpp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization">
+      <UniqueIdentifier>{DE0B0CB9-7190-3A30-8C2B-99E7EF2127EC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGInitialCondition.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGLinearization.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGSimplexTrim.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrim.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAnalysis.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAnalysisControl.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAxis.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimmer.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output">
+      <UniqueIdentifier>{C6BE0F33-1D8B-398A-82D4-D2B248433AAF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGfdmSocket.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGGroundCallback.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGInputSocket.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGInputType.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGModelLoader.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputFG.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputFile.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputSocket.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputTextFile.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputType.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGPropertyManager.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGPropertyReader.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGScript.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGUDPInputSocket.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLElement.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLFileRead.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLParse.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\net_fdm.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </None>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\string_utilities.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math">
+      <UniqueIdentifier>{382D98EE-D02A-3762-AC81-BB0FB61A5AC9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGColumnVector3.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGCondition.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGFunction.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGFunctionValue.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGLocation.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGMatrix33.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGModelFunctions.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGNelderMead.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGParameter.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGParameterValue.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGPropertyValue.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGQuaternion.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGRealValue.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGRungeKutta.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGStateSpace.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGTable.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGTemplateFunc.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\LagrangeMultiplier.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models">
+      <UniqueIdentifier>{4E6CD106-9A23-38C1-84B5-CA74579C7A4D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAccelerations.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAerodynamics.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAircraft.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAtmosphere.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAuxiliary.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGBuoyantForces.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGExternalForce.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGExternalReactions.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGFCS.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGFCSChannel.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGGasCell.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGGroundReactions.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGInertial.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGInput.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGLGear.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGMassBalance.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGModel.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGOutput.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGPropagate.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGPropulsion.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGSurface.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere">
+      <UniqueIdentifier>{B4A2BA75-6996-3BCA-AB14-CD3EC5840AC6}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGMars.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGMSIS.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGStandardAtmosphere.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGWinds.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\MSIS">
+      <UniqueIdentifier>{9418A003-5534-316E-BA3F-F9E785E24D6C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\MSIS\nrlmsise-00.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\MSIS</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control">
+      <UniqueIdentifier>{FE90A544-32AA-3E95-9F75-D5241C9D06B1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGAccelerometer.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGActuator.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGAngles.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGDeadBand.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGDistributor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFCSComponent.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFCSFunction.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFilter.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGGain.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGGyro.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGKinemat.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGLinearActuator.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGMagnetometer.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGPID.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSensor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSensorOrientation.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSummer.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSwitch.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGWaypoint.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion">
+      <UniqueIdentifier>{32431601-4CCC-3DB0-A004-DFE5EB3B2E0C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGBrushLessDCMotor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGElectric.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGEngine.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGForce.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGNozzle.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGPiston.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGPropeller.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGRocket.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGRotor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTank.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGThruster.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTransmission.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTurbine.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTurboProp.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear">
+      <UniqueIdentifier>{862DD980-23BD-34BE-BCC7-E389AA2EFCEC}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\compiler.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\io">
+      <UniqueIdentifier>{7469197E-2F51-366B-B27A-F0726F39ABC0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\io\iostreams">
+      <UniqueIdentifier>{C5D726C1-D101-34F3-BD02-EECE4BC15EE1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\io\iostreams\sgstream.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\io\iostreams</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\magvar">
+      <UniqueIdentifier>{6F3BE5A8-6E68-3F25-AE27-7A6A5DD64ED6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\magvar\coremag.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\magvar</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc">
+      <UniqueIdentifier>{2699217C-93FF-3819-A7C4-AF123C4B12E1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\sg_path.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\stdint.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\strutils.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\props">
+      <UniqueIdentifier>{CEEAB161-6026-3BAE-B195-6ED8B4895B71}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\props\props.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\props</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure">
+      <UniqueIdentifier>{F6035FCA-C45D-395B-A540-3486A5ABC46C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure\SGReferenced.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure\SGSharedPtr.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure</Filter>
+    </None>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml">
+      <UniqueIdentifier>{9A403813-DC14-3101-A9ED-1B67E7FAC44E}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\ascii.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\asciitab.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\easyxml.hxx">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </None>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat_config.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat_external.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\iasciitab.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\internal.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\latin1tab.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\macconfig.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\nametab.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\siphash.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\utf8tab.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\winconfig.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmlrole.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmltok.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmltok_impl.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities">
+      <UniqueIdentifier>{D253DF15-FE5D-37AB-A7A8-D734FB09BE15}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities\datafile.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities\plotXMLVisitor.h">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib">
+      <UniqueIdentifier>{33C76FAF-F42A-35FB-9C07-FFEA35BE4F57}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.dll">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.exp">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib</Filter>
+    </None>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.lib">
+      <Filter>Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib</Filter>
+    </None>
+    <Filter Include="Source\UEReferenceApp">
+      <UniqueIdentifier>{525F99DF-3442-3238-92BA-E44EC147A936}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyActor.cpp">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyActor.h">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyClass.cpp">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyClass.h">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyHUD.cpp">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyHUD.h">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\UEReferenceApp\UEReferenceApp.Build.cs">
+      <Filter>Source\UEReferenceApp</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\UEReferenceApp\UEReferenceApp.cpp">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\UEReferenceApp.h">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\UEReferenceApp\UEReferenceAppGameModeBase.cpp">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\UEReferenceAppGameModeBase.h">
+      <Filter>Source\UEReferenceApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

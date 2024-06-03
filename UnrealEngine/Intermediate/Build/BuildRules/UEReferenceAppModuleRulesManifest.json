@@ -1,0 +1,11 @@
+{
+	"SourceFiles": [
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Source\\UEReferenceApp\\UEReferenceApp.Build.cs",
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModelEditor\\JSBSimFlightDynamicsModelEditor.Build.cs",
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Plugins\\JSBSimFlightDynamicsModel\\Source\\JSBSimFlightDynamicsModel\\JSBSimFlightDynamicsModel.Build.cs",
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Plugins\\JSBSimFlightDynamicsModel\\Source\\ThirdParty\\JSBSim.Build.cs",
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Source\\UEReferenceApp.Target.cs",
+		"D:\\USRA_Task8\\Task8_daidulus\\UnrealEngine\\Source\\UEReferenceAppEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

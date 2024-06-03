@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Invalid|x64">
+      <Configuration>Invalid</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame|x64">
+      <Configuration>DebugGame</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGame_Editor|x64">
+      <Configuration>DebugGame_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development|x64">
+      <Configuration>Development</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Development_Editor|x64">
+      <Configuration>Development_Editor</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|x64">
+      <Configuration>Shipping</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{03552A82-3B35-3F1E-9F1B-3D49999FE8CE}</ProjectGuid>
+    <RootNamespace>UEReferenceApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="UECommon.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|x64'">
+    <NMakeBuildCommandLine>$(BuildBatchScript) UEReferenceApp Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(RebuildBatchScript) UEReferenceApp Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(CleanBatchScript) UEReferenceApp Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\UEReferenceApp-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame|x64'">
+    <NMakeCompile>
+      <NMakeCompileFileCommandLine>$(BuildBatchScript) UEReferenceApp Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
+    </NMakeCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+    <NMakeBuildCommandLine>$(BuildBatchScript) UEReferenceAppEditor Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(RebuildBatchScript) UEReferenceAppEditor Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(CleanBatchScript) UEReferenceAppEditor Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor-Win64-DebugGame.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugGame_Editor|x64'">
+    <NMakeCompile>
+      <NMakeCompileFileCommandLine>$(BuildBatchScript) UEReferenceAppEditor Win64 DebugGame -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
+    </NMakeCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <NMakeBuildCommandLine>$(BuildBatchScript) UEReferenceApp Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(RebuildBatchScript) UEReferenceApp Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(CleanBatchScript) UEReferenceApp Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\UEReferenceApp.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development|x64'">
+    <NMakeCompile>
+      <NMakeCompileFileCommandLine>$(BuildBatchScript) UEReferenceApp Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
+    </NMakeCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+    <NMakeBuildCommandLine>$(BuildBatchScript) UEReferenceAppEditor Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(RebuildBatchScript) UEReferenceAppEditor Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(CleanBatchScript) UEReferenceAppEditor Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>C:\Program Files\Epic Games\UE_5.3\Engine\Binaries\Win64\UnrealEditor.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Development_Editor|x64'">
+    <NMakeCompile>
+      <NMakeCompileFileCommandLine>$(BuildBatchScript) UEReferenceAppEditor Win64 Development -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
+    </NMakeCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
+    <NMakeBuildCommandLine>$(BuildBatchScript) UEReferenceApp Win64 Shipping -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(RebuildBatchScript) UEReferenceApp Win64 Shipping -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(CleanBatchScript) UEReferenceApp Win64 Shipping -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild</NMakeCleanCommandLine>
+    <NMakeOutput>..\..\Binaries\Win64\UEReferenceApp-Win64-Shipping.exe</NMakeOutput>
+    <AdditionalOptions>/std:c++17  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
+    <NMakeCompile>
+      <NMakeCompileFileCommandLine>$(BuildBatchScript) UEReferenceApp Win64 Shipping -Project="$(SolutionDir)UEReferenceApp.uproject" -WaitMutex -FromMsBuild -WorkingDir=$(MSBuildProjectDirectory) -Files=$(SelectedFiles)</NMakeCompileFileCommandLine>
+    </NMakeCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup>
+    <NMakePreprocessorDefinitions>$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>$(IncludePath);C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ActorPickerMode\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ActorPickerMode\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnalyticsET\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnalyticsET\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Analytics\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Analytics\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ApplicationCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ApplicationCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetDefinition\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetDefinition\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetRegistry\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetRegistry\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTagsEditor\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTagsEditor\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTools\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AssetTools\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioEditor\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioEditor\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioExtensions\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioExtensions\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioLinkEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerXAudio2\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixerXAudio2\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixer\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioMixer\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioPlatformConfiguration\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AudioPlatformConfiguration\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationController\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationController\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationTest\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\AutomationTest\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\BlueprintGraph\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\BlueprintGraph\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosSolverEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ChaosSolverEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Chaos\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Chaos\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClassViewer\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClassViewer\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClothSysRuntimeIntrfc\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ClothSysRuntimeIntrfc\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CollectionManager\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CollectionManager\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CommonMenuExtensions\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CommonMenuExtensions\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Constraints\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Constraints\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowserData\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowserData\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowser\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ContentBrowser\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CookOnTheFly\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CookOnTheFly\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreOnline\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Core\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Core\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DataflowCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DataflowCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DataflowEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DataflowEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DesktopPlatform\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DesktopPlatform\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DetailCustomizations\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DetailCustomizations\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperSettings\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperSettings\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperToolSettings\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DeveloperToolSettings\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DirectoryWatcher\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\DirectoryWatcher\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Documentation\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Documentation\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorConfig\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorConfig\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorFramework\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorFramework\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorSubsystem\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EditorSubsystem\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineMessages\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineMessages\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineSettings\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\EngineSettings\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Engine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FieldNotification\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FieldNotification\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FieldSystemEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FieldSystemEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FunctionalTesting\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\FunctionalTesting\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTags\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTags\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTasks\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GameplayTasks\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCollectionEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCollectionEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GeometryCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GraphEditor\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\GraphEditor\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HeadMountedDisplay\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HeadMountedDisplay\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Horde\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Horde\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HTTP\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\HTTP\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ImageCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ImageCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ImageWrapper\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ImageWrapper\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InputCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InputCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InteractiveToolsFramework\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InteractiveToolsFramework\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeEngine\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\InterchangeEngine\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\IoStoreOnDemand\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\IoStoreOnDemand\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\IrisCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\IrisCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\JsonUtilities\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\JsonUtilities\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Json\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Json\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\KismetCompiler\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\KismetCompiler\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Kismet\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Kismet\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Landscape\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Landscape\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\LevelEditor\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\LevelEditor\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Localization\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Localization\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MainFrame\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MainFrame\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MaterialUtilities\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MaterialUtilities\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Merge\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Merge\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshBuilder\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshBuilder\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshDescription\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshDescription\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshMergeUtilities\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshMergeUtilities\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshReductionInterface\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshReductionInterface\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshUtilitiesCommon\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshUtilitiesCommon\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshUtilities\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MeshUtilities\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MessagingCommon\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MessagingCommon\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Messaging\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Messaging\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieSceneCapture\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieSceneCapture\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieSceneTracks\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieSceneTracks\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieScene\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MovieScene\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MSQS\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\MSQS\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NavigationSystem\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NavigationSystem\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCommon\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCommon\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkFileSystem\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkFileSystem\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Networking\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Networking\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkReplayStreaming\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\NetworkReplayStreaming\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PacketHandler\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PacketHandler\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PakFile\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PakFile\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsUtilities\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PhysicsUtilities\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Projects\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Projects\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyEditor\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyEditor\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyPath\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\PropertyPath\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RawMesh\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RawMesh\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ReliableHComp\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ReliableHComp\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RenderCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RenderCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Renderer\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Renderer\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RHI\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RHI\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RSA\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\RSA\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SandboxFile\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SandboxFile\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SceneDepthPickerMode\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SceneDepthPickerMode\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Settings\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Settings\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SignalProcessing\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SignalProcessing\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SkeletalMeshDescription\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SkeletalMeshDescription\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SlateCore\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SlateCore\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Slate\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Slate\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Sockets\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Sockets\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SourceControl\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SourceControl\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StaticMeshDescription\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StaticMeshDescription\VNI;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StatusBar\UHT;C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StatusBar\VNI;$(DefaultSystemIncludePaths);</IncludePath>
+    <NMakeForcedIncludes>$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath>$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <AdditionalOptions>/std:c++20  /Zc:hiddenFriend /Zc:__cplusplus</AdditionalOptions>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectAdditionalIncludeDirectories>..\..\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\UnrealEditor\Inc\JSBSimFlightDynamicsModel\UHT</ProjectAdditionalIncludeDirectories>
+    <ProjectAdditionalIncludeDirectories_1>..\..\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\UnrealEditor\Inc\JSBSimFlightDynamicsModel\VNI</ProjectAdditionalIncludeDirectories_1>
+    <ProjectAdditionalIncludeDirectories_2>..\..\Plugins\JSBSimFlightDynamicsModel\Source</ProjectAdditionalIncludeDirectories_2>
+    <ProjectAdditionalIncludeDirectories_3>..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public</ProjectAdditionalIncludeDirectories_3>
+    <ProjectAdditionalIncludeDirectories_4>..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include</ProjectAdditionalIncludeDirectories_4>
+    <ProjectAdditionalIncludeDirectories_5>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StructViewer\UHT</ProjectAdditionalIncludeDirectories_5>
+    <ProjectAdditionalIncludeDirectories_6>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\StructViewer\VNI</ProjectAdditionalIncludeDirectories_6>
+    <ProjectAdditionalIncludeDirectories_7>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectDataInterface\UHT</ProjectAdditionalIncludeDirectories_7>
+    <ProjectAdditionalIncludeDirectories_8>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectDataInterface\VNI</ProjectAdditionalIncludeDirectories_8>
+    <ProjectAdditionalIncludeDirectories_9>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectEditor\UHT</ProjectAdditionalIncludeDirectories_9>
+    <ProjectAdditionalIncludeDirectories_10>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SubobjectEditor\VNI</ProjectAdditionalIncludeDirectories_10>
+    <ProjectAdditionalIncludeDirectories_11>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SynthBenchmark\UHT</ProjectAdditionalIncludeDirectories_11>
+    <ProjectAdditionalIncludeDirectories_12>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\SynthBenchmark\VNI</ProjectAdditionalIncludeDirectories_12>
+    <ProjectAdditionalIncludeDirectories_13>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TargetPlatform\UHT</ProjectAdditionalIncludeDirectories_13>
+    <ProjectAdditionalIncludeDirectories_14>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TargetPlatform\VNI</ProjectAdditionalIncludeDirectories_14>
+    <ProjectAdditionalIncludeDirectories_15>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureBuildUtilities\UHT</ProjectAdditionalIncludeDirectories_15>
+    <ProjectAdditionalIncludeDirectories_16>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureBuildUtilities\VNI</ProjectAdditionalIncludeDirectories_16>
+    <ProjectAdditionalIncludeDirectories_17>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureFormat\UHT</ProjectAdditionalIncludeDirectories_17>
+    <ProjectAdditionalIncludeDirectories_18>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TextureFormat\VNI</ProjectAdditionalIncludeDirectories_18>
+    <ProjectAdditionalIncludeDirectories_19>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement\UHT</ProjectAdditionalIncludeDirectories_19>
+    <ProjectAdditionalIncludeDirectories_20>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TimeManagement\VNI</ProjectAdditionalIncludeDirectories_20>
+    <ProjectAdditionalIncludeDirectories_21>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenusEditor\UHT</ProjectAdditionalIncludeDirectories_21>
+    <ProjectAdditionalIncludeDirectories_22>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenusEditor\VNI</ProjectAdditionalIncludeDirectories_22>
+    <ProjectAdditionalIncludeDirectories_23>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenus\UHT</ProjectAdditionalIncludeDirectories_23>
+    <ProjectAdditionalIncludeDirectories_24>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolMenus\VNI</ProjectAdditionalIncludeDirectories_24>
+    <ProjectAdditionalIncludeDirectories_25>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolWidgets\UHT</ProjectAdditionalIncludeDirectories_25>
+    <ProjectAdditionalIncludeDirectories_26>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ToolWidgets\VNI</ProjectAdditionalIncludeDirectories_26>
+    <ProjectAdditionalIncludeDirectories_27>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TraceLog\UHT</ProjectAdditionalIncludeDirectories_27>
+    <ProjectAdditionalIncludeDirectories_28>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TraceLog\VNI</ProjectAdditionalIncludeDirectories_28>
+    <ProjectAdditionalIncludeDirectories_29>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementFramework\UHT</ProjectAdditionalIncludeDirectories_29>
+    <ProjectAdditionalIncludeDirectories_30>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementFramework\VNI</ProjectAdditionalIncludeDirectories_30>
+    <ProjectAdditionalIncludeDirectories_31>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementRuntime\UHT</ProjectAdditionalIncludeDirectories_31>
+    <ProjectAdditionalIncludeDirectories_32>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\TypedElementRuntime\VNI</ProjectAdditionalIncludeDirectories_32>
+    <ProjectAdditionalIncludeDirectories_33>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UELibSampleRate\UHT</ProjectAdditionalIncludeDirectories_33>
+    <ProjectAdditionalIncludeDirectories_34>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UELibSampleRate\VNI</ProjectAdditionalIncludeDirectories_34>
+    <ProjectAdditionalIncludeDirectories_35>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UMG\UHT</ProjectAdditionalIncludeDirectories_35>
+    <ProjectAdditionalIncludeDirectories_36>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UMG\VNI</ProjectAdditionalIncludeDirectories_36>
+    <ProjectAdditionalIncludeDirectories_37>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UncontrolledChangelists\UHT</ProjectAdditionalIncludeDirectories_37>
+    <ProjectAdditionalIncludeDirectories_38>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UncontrolledChangelists\VNI</ProjectAdditionalIncludeDirectories_38>
+    <ProjectAdditionalIncludeDirectories_39>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEdMessages\UHT</ProjectAdditionalIncludeDirectories_39>
+    <ProjectAdditionalIncludeDirectories_40>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEdMessages\VNI</ProjectAdditionalIncludeDirectories_40>
+    <ProjectAdditionalIncludeDirectories_41>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd\UHT</ProjectAdditionalIncludeDirectories_41>
+    <ProjectAdditionalIncludeDirectories_42>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\UnrealEd\VNI</ProjectAdditionalIncludeDirectories_42>
+    <ProjectAdditionalIncludeDirectories_43>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\VREditor\UHT</ProjectAdditionalIncludeDirectories_43>
+    <ProjectAdditionalIncludeDirectories_44>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\VREditor\VNI</ProjectAdditionalIncludeDirectories_44>
+    <ProjectAdditionalIncludeDirectories_45>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ViewportInteraction\UHT</ProjectAdditionalIncludeDirectories_45>
+    <ProjectAdditionalIncludeDirectories_46>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\ViewportInteraction\VNI</ProjectAdditionalIncludeDirectories_46>
+    <ProjectAdditionalIncludeDirectories_47>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Voronoi\UHT</ProjectAdditionalIncludeDirectories_47>
+    <ProjectAdditionalIncludeDirectories_48>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\Voronoi\VNI</ProjectAdditionalIncludeDirectories_48>
+    <ProjectAdditionalIncludeDirectories_49>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\UHT</ProjectAdditionalIncludeDirectories_49>
+    <ProjectAdditionalIncludeDirectories_50>C:\Program Files\Epic Games\UE_5.3\Engine\Intermediate\Build\Win64\UnrealEditor\Inc\WidgetRegistration\VNI</ProjectAdditionalIncludeDirectories_50>
+    <ProjectAdditionalIncludeDirectories_51>C:\Program Files\Epic Games\UE_5.3\Engine\Plugins\Runtime\GeoReferencing\Intermediate\Build\Win64\UnrealEditor\Inc\GeoReferencing\UHT</ProjectAdditionalIncludeDirectories_51>
+    <ProjectAdditionalIncludeDirectories_52>C:\Program Files\Epic Games\UE_5.3\Engine\Plugins\Runtime\GeoReferencing\Intermediate\Build\Win64\UnrealEditor\Inc\GeoReferencing\VNI</ProjectAdditionalIncludeDirectories_52>
+    <ProjectAdditionalIncludeDirectories_53>C:\Program Files\Epic Games\UE_5.3\Engine\Plugins\Runtime\GeoReferencing\Source</ProjectAdditionalIncludeDirectories_53>
+    <ProjectAdditionalIncludeDirectories_54>C:\Program Files\Epic Games\UE_5.3\Engine\Plugins\Runtime\GeoReferencing\Source\GeoReferencing\Public</ProjectAdditionalIncludeDirectories_54>
+    <ProjectAdditionalIncludeDirectories_55>C:\Program Files\Epic Games\UE_5.3\Engine\Shaders\Shared</ProjectAdditionalIncludeDirectories_55>
+    <ProjectAdditionalIncludeDirectories_56>C:\Program Files\Epic Games\UE_5.3\Engine\Source</ProjectAdditionalIncludeDirectories_56>
+    <ProjectAdditionalIncludeDirectories_57>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer</ProjectAdditionalIncludeDirectories_57>
+    <ProjectAdditionalIncludeDirectories_58>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\AnimationDataController\Public</ProjectAdditionalIncludeDirectories_58>
+    <ProjectAdditionalIncludeDirectories_59>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\AssetTools\Public</ProjectAdditionalIncludeDirectories_59>
+    <ProjectAdditionalIncludeDirectories_60>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\AutomationController\Public</ProjectAdditionalIncludeDirectories_60>
+    <ProjectAdditionalIncludeDirectories_61>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\CollectionManager\Public</ProjectAdditionalIncludeDirectories_61>
+    <ProjectAdditionalIncludeDirectories_62>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\DesktopPlatform\Internal</ProjectAdditionalIncludeDirectories_62>
+    <ProjectAdditionalIncludeDirectories_63>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\DesktopPlatform\Public</ProjectAdditionalIncludeDirectories_63>
+    <ProjectAdditionalIncludeDirectories_64>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\DeveloperToolSettings\Classes</ProjectAdditionalIncludeDirectories_64>
+    <ProjectAdditionalIncludeDirectories_65>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\DeveloperToolSettings\Public</ProjectAdditionalIncludeDirectories_65>
+    <ProjectAdditionalIncludeDirectories_66>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\DirectoryWatcher\Public</ProjectAdditionalIncludeDirectories_66>
+    <ProjectAdditionalIncludeDirectories_67>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\FunctionalTesting\Classes</ProjectAdditionalIncludeDirectories_67>
+    <ProjectAdditionalIncludeDirectories_68>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\FunctionalTesting\Public</ProjectAdditionalIncludeDirectories_68>
+    <ProjectAdditionalIncludeDirectories_69>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\Horde\Public</ProjectAdditionalIncludeDirectories_69>
+    <ProjectAdditionalIncludeDirectories_70>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\Localization\Public</ProjectAdditionalIncludeDirectories_70>
+    <ProjectAdditionalIncludeDirectories_71>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\MaterialUtilities\Public</ProjectAdditionalIncludeDirectories_71>
+    <ProjectAdditionalIncludeDirectories_72>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\Merge\Public</ProjectAdditionalIncludeDirectories_72>
+    <ProjectAdditionalIncludeDirectories_73>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\MeshBuilder\Public</ProjectAdditionalIncludeDirectories_73>
+    <ProjectAdditionalIncludeDirectories_74>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\MeshMergeUtilities\Public</ProjectAdditionalIncludeDirectories_74>
+    <ProjectAdditionalIncludeDirectories_75>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\MeshReductionInterface\Public</ProjectAdditionalIncludeDirectories_75>
+    <ProjectAdditionalIncludeDirectories_76>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\MeshUtilities\Public</ProjectAdditionalIncludeDirectories_76>
+    <ProjectAdditionalIncludeDirectories_77>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\PhysicsUtilities\Public</ProjectAdditionalIncludeDirectories_77>
+    <ProjectAdditionalIncludeDirectories_78>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\Settings\Public</ProjectAdditionalIncludeDirectories_78>
+    <ProjectAdditionalIncludeDirectories_79>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\SourceControl\Public</ProjectAdditionalIncludeDirectories_79>
+    <ProjectAdditionalIncludeDirectories_80>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\TargetPlatform\Public</ProjectAdditionalIncludeDirectories_80>
+    <ProjectAdditionalIncludeDirectories_81>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\TextureBuildUtilities\Public</ProjectAdditionalIncludeDirectories_81>
+    <ProjectAdditionalIncludeDirectories_82>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\TextureFormat\Public</ProjectAdditionalIncludeDirectories_82>
+    <ProjectAdditionalIncludeDirectories_83>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\ToolMenus\Public</ProjectAdditionalIncludeDirectories_83>
+    <ProjectAdditionalIncludeDirectories_84>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\ToolWidgets\Public</ProjectAdditionalIncludeDirectories_84>
+    <ProjectAdditionalIncludeDirectories_85>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\UncontrolledChangelists\Public</ProjectAdditionalIncludeDirectories_85>
+    <ProjectAdditionalIncludeDirectories_86>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Developer\WidgetRegistration\Public</ProjectAdditionalIncludeDirectories_86>
+    <ProjectAdditionalIncludeDirectories_87>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor</ProjectAdditionalIncludeDirectories_87>
+    <ProjectAdditionalIncludeDirectories_88>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ActorPickerMode\Public</ProjectAdditionalIncludeDirectories_88>
+    <ProjectAdditionalIncludeDirectories_89>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\AssetDefinition\Public</ProjectAdditionalIncludeDirectories_89>
+    <ProjectAdditionalIncludeDirectories_90>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\AssetTagsEditor\Public</ProjectAdditionalIncludeDirectories_90>
+    <ProjectAdditionalIncludeDirectories_91>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\AudioEditor\Classes</ProjectAdditionalIncludeDirectories_91>
+    <ProjectAdditionalIncludeDirectories_92>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\AudioEditor\Public</ProjectAdditionalIncludeDirectories_92>
+    <ProjectAdditionalIncludeDirectories_93>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\BlueprintGraph\Classes</ProjectAdditionalIncludeDirectories_93>
+    <ProjectAdditionalIncludeDirectories_94>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\BlueprintGraph\Public</ProjectAdditionalIncludeDirectories_94>
+    <ProjectAdditionalIncludeDirectories_95>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ClassViewer\Public</ProjectAdditionalIncludeDirectories_95>
+    <ProjectAdditionalIncludeDirectories_96>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\CommonMenuExtensions\Public</ProjectAdditionalIncludeDirectories_96>
+    <ProjectAdditionalIncludeDirectories_97>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ContentBrowserData\Public</ProjectAdditionalIncludeDirectories_97>
+    <ProjectAdditionalIncludeDirectories_98>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ContentBrowser\Public</ProjectAdditionalIncludeDirectories_98>
+    <ProjectAdditionalIncludeDirectories_99>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\DetailCustomizations\Public</ProjectAdditionalIncludeDirectories_99>
+    <ProjectAdditionalIncludeDirectories_100>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\Documentation\Public</ProjectAdditionalIncludeDirectories_100>
+    <ProjectAdditionalIncludeDirectories_101>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\EditorConfig\Public</ProjectAdditionalIncludeDirectories_101>
+    <ProjectAdditionalIncludeDirectories_102>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\EditorFramework\Public</ProjectAdditionalIncludeDirectories_102>
+    <ProjectAdditionalIncludeDirectories_103>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\EditorSubsystem\Public</ProjectAdditionalIncludeDirectories_103>
+    <ProjectAdditionalIncludeDirectories_104>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\GraphEditor\Public</ProjectAdditionalIncludeDirectories_104>
+    <ProjectAdditionalIncludeDirectories_105>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\KismetCompiler\Public</ProjectAdditionalIncludeDirectories_105>
+    <ProjectAdditionalIncludeDirectories_106>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\Kismet\Classes</ProjectAdditionalIncludeDirectories_106>
+    <ProjectAdditionalIncludeDirectories_107>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\Kismet\Public</ProjectAdditionalIncludeDirectories_107>
+    <ProjectAdditionalIncludeDirectories_108>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\LevelEditor\Public</ProjectAdditionalIncludeDirectories_108>
+    <ProjectAdditionalIncludeDirectories_109>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\MainFrame\Public</ProjectAdditionalIncludeDirectories_109>
+    <ProjectAdditionalIncludeDirectories_110>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\PropertyEditor\Internal</ProjectAdditionalIncludeDirectories_110>
+    <ProjectAdditionalIncludeDirectories_111>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\PropertyEditor\Public</ProjectAdditionalIncludeDirectories_111>
+    <ProjectAdditionalIncludeDirectories_112>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\SceneDepthPickerMode\Public</ProjectAdditionalIncludeDirectories_112>
+    <ProjectAdditionalIncludeDirectories_113>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\StatusBar\Public</ProjectAdditionalIncludeDirectories_113>
+    <ProjectAdditionalIncludeDirectories_114>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\StructViewer\Public</ProjectAdditionalIncludeDirectories_114>
+    <ProjectAdditionalIncludeDirectories_115>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\SubobjectDataInterface\Public</ProjectAdditionalIncludeDirectories_115>
+    <ProjectAdditionalIncludeDirectories_116>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\SubobjectEditor\Public</ProjectAdditionalIncludeDirectories_116>
+    <ProjectAdditionalIncludeDirectories_117>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ToolMenusEditor\Public</ProjectAdditionalIncludeDirectories_117>
+    <ProjectAdditionalIncludeDirectories_118>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\UnrealEdMessages\Classes</ProjectAdditionalIncludeDirectories_118>
+    <ProjectAdditionalIncludeDirectories_119>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\UnrealEdMessages\Public</ProjectAdditionalIncludeDirectories_119>
+    <ProjectAdditionalIncludeDirectories_120>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\UnrealEd\Classes</ProjectAdditionalIncludeDirectories_120>
+    <ProjectAdditionalIncludeDirectories_121>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\UnrealEd\Internal</ProjectAdditionalIncludeDirectories_121>
+    <ProjectAdditionalIncludeDirectories_122>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\UnrealEd\Public</ProjectAdditionalIncludeDirectories_122>
+    <ProjectAdditionalIncludeDirectories_123>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\VREditor\Public</ProjectAdditionalIncludeDirectories_123>
+    <ProjectAdditionalIncludeDirectories_124>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Editor\ViewportInteraction\Public</ProjectAdditionalIncludeDirectories_124>
+    <ProjectAdditionalIncludeDirectories_125>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Programs\UnrealLightmass\Public</ProjectAdditionalIncludeDirectories_125>
+    <ProjectAdditionalIncludeDirectories_126>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime</ProjectAdditionalIncludeDirectories_126>
+    <ProjectAdditionalIncludeDirectories_127>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Analytics</ProjectAdditionalIncludeDirectories_127>
+    <ProjectAdditionalIncludeDirectories_128>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Analytics\AnalyticsET\Public</ProjectAdditionalIncludeDirectories_128>
+    <ProjectAdditionalIncludeDirectories_129>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Analytics\Analytics\Public</ProjectAdditionalIncludeDirectories_129>
+    <ProjectAdditionalIncludeDirectories_130>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AnimationCore\Public</ProjectAdditionalIncludeDirectories_130>
+    <ProjectAdditionalIncludeDirectories_131>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\ApplicationCore\Public</ProjectAdditionalIncludeDirectories_131>
+    <ProjectAdditionalIncludeDirectories_132>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AssetRegistry\Internal</ProjectAdditionalIncludeDirectories_132>
+    <ProjectAdditionalIncludeDirectories_133>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AssetRegistry\Public</ProjectAdditionalIncludeDirectories_133>
+    <ProjectAdditionalIncludeDirectories_134>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioExtensions\Public</ProjectAdditionalIncludeDirectories_134>
+    <ProjectAdditionalIncludeDirectories_135>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioLink</ProjectAdditionalIncludeDirectories_135>
+    <ProjectAdditionalIncludeDirectories_136>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioLink\AudioLinkCore\Public</ProjectAdditionalIncludeDirectories_136>
+    <ProjectAdditionalIncludeDirectories_137>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioLink\AudioLinkEngine\Public</ProjectAdditionalIncludeDirectories_137>
+    <ProjectAdditionalIncludeDirectories_138>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioMixerCore\Public</ProjectAdditionalIncludeDirectories_138>
+    <ProjectAdditionalIncludeDirectories_139>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioMixer\Classes</ProjectAdditionalIncludeDirectories_139>
+    <ProjectAdditionalIncludeDirectories_140>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioMixer\Public</ProjectAdditionalIncludeDirectories_140>
+    <ProjectAdditionalIncludeDirectories_141>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AudioPlatformConfiguration\Public</ProjectAdditionalIncludeDirectories_141>
+    <ProjectAdditionalIncludeDirectories_142>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\AutomationTest\Public</ProjectAdditionalIncludeDirectories_142>
+    <ProjectAdditionalIncludeDirectories_143>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\ClothingSystemRuntimeInterface\Public</ProjectAdditionalIncludeDirectories_143>
+    <ProjectAdditionalIncludeDirectories_144>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\CookOnTheFly\Internal</ProjectAdditionalIncludeDirectories_144>
+    <ProjectAdditionalIncludeDirectories_145>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\CoreOnline\Public</ProjectAdditionalIncludeDirectories_145>
+    <ProjectAdditionalIncludeDirectories_146>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\CoreUObject\Internal</ProjectAdditionalIncludeDirectories_146>
+    <ProjectAdditionalIncludeDirectories_147>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\CoreUObject\Public</ProjectAdditionalIncludeDirectories_147>
+    <ProjectAdditionalIncludeDirectories_148>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Core\Internal</ProjectAdditionalIncludeDirectories_148>
+    <ProjectAdditionalIncludeDirectories_149>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Core\Public</ProjectAdditionalIncludeDirectories_149>
+    <ProjectAdditionalIncludeDirectories_150>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\DeveloperSettings\Public</ProjectAdditionalIncludeDirectories_150>
+    <ProjectAdditionalIncludeDirectories_151>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\EngineMessages\Public</ProjectAdditionalIncludeDirectories_151>
+    <ProjectAdditionalIncludeDirectories_152>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\EngineSettings\Classes</ProjectAdditionalIncludeDirectories_152>
+    <ProjectAdditionalIncludeDirectories_153>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\EngineSettings\Public</ProjectAdditionalIncludeDirectories_153>
+    <ProjectAdditionalIncludeDirectories_154>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Engine\Classes</ProjectAdditionalIncludeDirectories_154>
+    <ProjectAdditionalIncludeDirectories_155>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Engine\Internal</ProjectAdditionalIncludeDirectories_155>
+    <ProjectAdditionalIncludeDirectories_156>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Engine\Public</ProjectAdditionalIncludeDirectories_156>
+    <ProjectAdditionalIncludeDirectories_157>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental</ProjectAdditionalIncludeDirectories_157>
+    <ProjectAdditionalIncludeDirectories_158>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Animation</ProjectAdditionalIncludeDirectories_158>
+    <ProjectAdditionalIncludeDirectories_159>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Animation\Constraints\Public</ProjectAdditionalIncludeDirectories_159>
+    <ProjectAdditionalIncludeDirectories_160>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\ChaosCore\Public</ProjectAdditionalIncludeDirectories_160>
+    <ProjectAdditionalIncludeDirectories_161>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\ChaosSolverEngine\Public</ProjectAdditionalIncludeDirectories_161>
+    <ProjectAdditionalIncludeDirectories_162>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Chaos\Public</ProjectAdditionalIncludeDirectories_162>
+    <ProjectAdditionalIncludeDirectories_163>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Dataflow</ProjectAdditionalIncludeDirectories_163>
+    <ProjectAdditionalIncludeDirectories_164>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Dataflow\Core\Public</ProjectAdditionalIncludeDirectories_164>
+    <ProjectAdditionalIncludeDirectories_165>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Dataflow\Engine\Public</ProjectAdditionalIncludeDirectories_165>
+    <ProjectAdditionalIncludeDirectories_166>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\FieldSystem\Source</ProjectAdditionalIncludeDirectories_166>
+    <ProjectAdditionalIncludeDirectories_167>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public</ProjectAdditionalIncludeDirectories_167>
+    <ProjectAdditionalIncludeDirectories_168>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\GeometryCollectionEngine\Public</ProjectAdditionalIncludeDirectories_168>
+    <ProjectAdditionalIncludeDirectories_169>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\IoStoreOnDemand\Public</ProjectAdditionalIncludeDirectories_169>
+    <ProjectAdditionalIncludeDirectories_170>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Iris</ProjectAdditionalIncludeDirectories_170>
+    <ProjectAdditionalIncludeDirectories_171>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Iris\Core\Public</ProjectAdditionalIncludeDirectories_171>
+    <ProjectAdditionalIncludeDirectories_172>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Experimental\Voronoi\Public</ProjectAdditionalIncludeDirectories_172>
+    <ProjectAdditionalIncludeDirectories_173>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\FieldNotification\Public</ProjectAdditionalIncludeDirectories_173>
+    <ProjectAdditionalIncludeDirectories_174>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\GameplayTags\Classes</ProjectAdditionalIncludeDirectories_174>
+    <ProjectAdditionalIncludeDirectories_175>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\GameplayTags\Public</ProjectAdditionalIncludeDirectories_175>
+    <ProjectAdditionalIncludeDirectories_176>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\GameplayTasks\Classes</ProjectAdditionalIncludeDirectories_176>
+    <ProjectAdditionalIncludeDirectories_177>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\GameplayTasks\Public</ProjectAdditionalIncludeDirectories_177>
+    <ProjectAdditionalIncludeDirectories_178>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\GeometryCore\Public</ProjectAdditionalIncludeDirectories_178>
+    <ProjectAdditionalIncludeDirectories_179>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\HeadMountedDisplay\Public</ProjectAdditionalIncludeDirectories_179>
+    <ProjectAdditionalIncludeDirectories_180>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\ImageCore\Public</ProjectAdditionalIncludeDirectories_180>
+    <ProjectAdditionalIncludeDirectories_181>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\ImageWrapper\Public</ProjectAdditionalIncludeDirectories_181>
+    <ProjectAdditionalIncludeDirectories_182>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\InputCore\Classes</ProjectAdditionalIncludeDirectories_182>
+    <ProjectAdditionalIncludeDirectories_183>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\InputCore\Public</ProjectAdditionalIncludeDirectories_183>
+    <ProjectAdditionalIncludeDirectories_184>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\InteractiveToolsFramework\Public</ProjectAdditionalIncludeDirectories_184>
+    <ProjectAdditionalIncludeDirectories_185>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Interchange</ProjectAdditionalIncludeDirectories_185>
+    <ProjectAdditionalIncludeDirectories_186>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Interchange\Core\Public</ProjectAdditionalIncludeDirectories_186>
+    <ProjectAdditionalIncludeDirectories_187>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Interchange\Engine\Public</ProjectAdditionalIncludeDirectories_187>
+    <ProjectAdditionalIncludeDirectories_188>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\JsonUtilities\Public</ProjectAdditionalIncludeDirectories_188>
+    <ProjectAdditionalIncludeDirectories_189>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Json\Public</ProjectAdditionalIncludeDirectories_189>
+    <ProjectAdditionalIncludeDirectories_190>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Landscape\Classes</ProjectAdditionalIncludeDirectories_190>
+    <ProjectAdditionalIncludeDirectories_191>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Landscape\Public</ProjectAdditionalIncludeDirectories_191>
+    <ProjectAdditionalIncludeDirectories_192>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MaterialShaderQualitySettings\Classes</ProjectAdditionalIncludeDirectories_192>
+    <ProjectAdditionalIncludeDirectories_193>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MeshDescription\Public</ProjectAdditionalIncludeDirectories_193>
+    <ProjectAdditionalIncludeDirectories_194>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MeshUtilitiesCommon\Public</ProjectAdditionalIncludeDirectories_194>
+    <ProjectAdditionalIncludeDirectories_195>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MessagingCommon\Public</ProjectAdditionalIncludeDirectories_195>
+    <ProjectAdditionalIncludeDirectories_196>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Messaging\Public</ProjectAdditionalIncludeDirectories_196>
+    <ProjectAdditionalIncludeDirectories_197>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MovieSceneCapture\Public</ProjectAdditionalIncludeDirectories_197>
+    <ProjectAdditionalIncludeDirectories_198>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MovieSceneTracks\Public</ProjectAdditionalIncludeDirectories_198>
+    <ProjectAdditionalIncludeDirectories_199>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\MovieScene\Public</ProjectAdditionalIncludeDirectories_199>
+    <ProjectAdditionalIncludeDirectories_200>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\NavigationSystem\Public</ProjectAdditionalIncludeDirectories_200>
+    <ProjectAdditionalIncludeDirectories_201>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Net</ProjectAdditionalIncludeDirectories_201>
+    <ProjectAdditionalIncludeDirectories_202>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Net\Common\Public</ProjectAdditionalIncludeDirectories_202>
+    <ProjectAdditionalIncludeDirectories_203>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Net\Core\Classes</ProjectAdditionalIncludeDirectories_203>
+    <ProjectAdditionalIncludeDirectories_204>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Net\Core\Public</ProjectAdditionalIncludeDirectories_204>
+    <ProjectAdditionalIncludeDirectories_205>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\NetworkFileSystem\Public</ProjectAdditionalIncludeDirectories_205>
+    <ProjectAdditionalIncludeDirectories_206>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\NetworkReplayStreaming</ProjectAdditionalIncludeDirectories_206>
+    <ProjectAdditionalIncludeDirectories_207>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\NetworkReplayStreaming\NetworkReplayStreaming\Public</ProjectAdditionalIncludeDirectories_207>
+    <ProjectAdditionalIncludeDirectories_208>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Networking\Public</ProjectAdditionalIncludeDirectories_208>
+    <ProjectAdditionalIncludeDirectories_209>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Online</ProjectAdditionalIncludeDirectories_209>
+    <ProjectAdditionalIncludeDirectories_210>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Online\HTTP\Internal</ProjectAdditionalIncludeDirectories_210>
+    <ProjectAdditionalIncludeDirectories_211>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Online\HTTP\Public</ProjectAdditionalIncludeDirectories_211>
+    <ProjectAdditionalIncludeDirectories_212>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PacketHandlers</ProjectAdditionalIncludeDirectories_212>
+    <ProjectAdditionalIncludeDirectories_213>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PacketHandlers\PacketHandler\Classes</ProjectAdditionalIncludeDirectories_213>
+    <ProjectAdditionalIncludeDirectories_214>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PacketHandlers\PacketHandler\Public</ProjectAdditionalIncludeDirectories_214>
+    <ProjectAdditionalIncludeDirectories_215>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PacketHandlers\ReliabilityHandlerComponent\Public</ProjectAdditionalIncludeDirectories_215>
+    <ProjectAdditionalIncludeDirectories_216>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PakFile\Internal</ProjectAdditionalIncludeDirectories_216>
+    <ProjectAdditionalIncludeDirectories_217>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PakFile\Public</ProjectAdditionalIncludeDirectories_217>
+    <ProjectAdditionalIncludeDirectories_218>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PhysicsCore\Public</ProjectAdditionalIncludeDirectories_218>
+    <ProjectAdditionalIncludeDirectories_219>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Projects\Public</ProjectAdditionalIncludeDirectories_219>
+    <ProjectAdditionalIncludeDirectories_220>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\PropertyPath\Public</ProjectAdditionalIncludeDirectories_220>
+    <ProjectAdditionalIncludeDirectories_221>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\RHI\Public</ProjectAdditionalIncludeDirectories_221>
+    <ProjectAdditionalIncludeDirectories_222>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\RSA\Public</ProjectAdditionalIncludeDirectories_222>
+    <ProjectAdditionalIncludeDirectories_223>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\RawMesh\Public</ProjectAdditionalIncludeDirectories_223>
+    <ProjectAdditionalIncludeDirectories_224>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\RenderCore\Public</ProjectAdditionalIncludeDirectories_224>
+    <ProjectAdditionalIncludeDirectories_225>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Renderer\Public</ProjectAdditionalIncludeDirectories_225>
+    <ProjectAdditionalIncludeDirectories_226>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\SandboxFile\Public</ProjectAdditionalIncludeDirectories_226>
+    <ProjectAdditionalIncludeDirectories_227>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\SignalProcessing\Public</ProjectAdditionalIncludeDirectories_227>
+    <ProjectAdditionalIncludeDirectories_228>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\SkeletalMeshDescription\Public</ProjectAdditionalIncludeDirectories_228>
+    <ProjectAdditionalIncludeDirectories_229>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\SlateCore\Public</ProjectAdditionalIncludeDirectories_229>
+    <ProjectAdditionalIncludeDirectories_230>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Slate\Public</ProjectAdditionalIncludeDirectories_230>
+    <ProjectAdditionalIncludeDirectories_231>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Sockets\Public</ProjectAdditionalIncludeDirectories_231>
+    <ProjectAdditionalIncludeDirectories_232>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\StaticMeshDescription\Public</ProjectAdditionalIncludeDirectories_232>
+    <ProjectAdditionalIncludeDirectories_233>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\SynthBenchmark\Public</ProjectAdditionalIncludeDirectories_233>
+    <ProjectAdditionalIncludeDirectories_234>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\TimeManagement\Public</ProjectAdditionalIncludeDirectories_234>
+    <ProjectAdditionalIncludeDirectories_235>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\TraceLog\Public</ProjectAdditionalIncludeDirectories_235>
+    <ProjectAdditionalIncludeDirectories_236>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\TypedElementFramework\Public</ProjectAdditionalIncludeDirectories_236>
+    <ProjectAdditionalIncludeDirectories_237>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\TypedElementRuntime\Public</ProjectAdditionalIncludeDirectories_237>
+    <ProjectAdditionalIncludeDirectories_238>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\UMG\Public</ProjectAdditionalIncludeDirectories_238>
+    <ProjectAdditionalIncludeDirectories_239>C:\Program Files\Epic Games\UE_5.3\Engine\Source\Runtime\Windows</ProjectAdditionalIncludeDirectories_239>
+    <ProjectAdditionalIncludeDirectories_240>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty</ProjectAdditionalIncludeDirectories_240>
+    <ProjectAdditionalIncludeDirectories_241>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\Intel</ProjectAdditionalIncludeDirectories_241>
+    <ProjectAdditionalIncludeDirectories_242>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\LibTiff\Source</ProjectAdditionalIncludeDirectories_242>
+    <ProjectAdditionalIncludeDirectories_243>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\LibTiff\Source\Win64</ProjectAdditionalIncludeDirectories_243>
+    <ProjectAdditionalIncludeDirectories_244>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\libSampleRate\Public</ProjectAdditionalIncludeDirectories_244>
+    <ProjectAdditionalIncludeDirectories_245>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\mimalloc\include</ProjectAdditionalIncludeDirectories_245>
+    <ClCompile_AdditionalIncludeDirectories>$(NMakeIncludeSearchPath);$(ProjectAdditionalIncludeDirectories_56);..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private;$(ProjectAdditionalIncludeDirectories_41);$(ProjectAdditionalIncludeDirectories_42);$(ProjectAdditionalIncludeDirectories_125);$(ProjectAdditionalIncludeDirectories_120);$(ProjectAdditionalIncludeDirectories_122);$(ProjectAdditionalIncludeDirectories_87);$(ProjectAdditionalIncludeDirectories_121);$(ProjectAdditionalIncludeDirectories_89);$(ProjectAdditionalIncludeDirectories_149);$(ProjectAdditionalIncludeDirectories_126);$(ProjectAdditionalIncludeDirectories_148);$(ProjectAdditionalIncludeDirectories_27);$(ProjectAdditionalIncludeDirectories_28);$(ProjectAdditionalIncludeDirectories_235);$(ProjectAdditionalIncludeDirectories_147);$(ProjectAdditionalIncludeDirectories_146);$(ProjectAdditionalIncludeDirectories_133);$(ProjectAdditionalIncludeDirectories_132);$(ProjectAdditionalIncludeDirectories_55);$(ProjectAdditionalIncludeDirectories_154);$(ProjectAdditionalIncludeDirectories_156);$(ProjectAdditionalIncludeDirectories_155);$(ProjectAdditionalIncludeDirectories_145);$(ProjectAdditionalIncludeDirectories_173);$(ProjectAdditionalIncludeDirectories_203);$(ProjectAdditionalIncludeDirectories_204);$(ProjectAdditionalIncludeDirectories_201);$(ProjectAdditionalIncludeDirectories_202);$(ProjectAdditionalIncludeDirectories_180);$(ProjectAdditionalIncludeDirectories_189);$(ProjectAdditionalIncludeDirectories_188);$(ProjectAdditionalIncludeDirectories_229);$(ProjectAdditionalIncludeDirectories_182);$(ProjectAdditionalIncludeDirectories_183);$(ProjectAdditionalIncludeDirectories_131);$(ProjectAdditionalIncludeDirectories_221);$(ProjectAdditionalIncludeDirectories_230);$(ProjectAdditionalIncludeDirectories_181);$(ProjectAdditionalIncludeDirectories_240);$(ProjectAdditionalIncludeDirectories_196);$(ProjectAdditionalIncludeDirectories_195);$(ProjectAdditionalIncludeDirectories_224);$(ProjectAdditionalIncludeDirectories_128);$(ProjectAdditionalIncludeDirectories_127);$(ProjectAdditionalIncludeDirectories_129);$(ProjectAdditionalIncludeDirectories_231);$(ProjectAdditionalIncludeDirectories_151);$(ProjectAdditionalIncludeDirectories_152);$(ProjectAdditionalIncludeDirectories_153);$(ProjectAdditionalIncludeDirectories_11);$(ProjectAdditionalIncludeDirectories_12);$(ProjectAdditionalIncludeDirectories_233);$(ProjectAdditionalIncludeDirectories_174);$(ProjectAdditionalIncludeDirectories_175);$(ProjectAdditionalIncludeDirectories_150);$(ProjectAdditionalIncludeDirectories_213);$(ProjectAdditionalIncludeDirectories_214);$(ProjectAdditionalIncludeDirectories_212);$(ProjectAdditionalIncludeDirectories_215);$(ProjectAdditionalIncludeDirectories_141);$(ProjectAdditionalIncludeDirectories_193);$(ProjectAdditionalIncludeDirectories_232);$(ProjectAdditionalIncludeDirectories_228);$(ProjectAdditionalIncludeDirectories_130);$(ProjectAdditionalIncludeDirectories_217);$(ProjectAdditionalIncludeDirectories_216);$(ProjectAdditionalIncludeDirectories_222);$(ProjectAdditionalIncludeDirectories_207);$(ProjectAdditionalIncludeDirectories_206);$(ProjectAdditionalIncludeDirectories_218);$(ProjectAdditionalIncludeDirectories_160);$(ProjectAdditionalIncludeDirectories_157);$(ProjectAdditionalIncludeDirectories_241);$(ProjectAdditionalIncludeDirectories_162);$(ProjectAdditionalIncludeDirectories_47);$(ProjectAdditionalIncludeDirectories_48);$(ProjectAdditionalIncludeDirectories_172);$(ProjectAdditionalIncludeDirectories_178);$(ProjectAdditionalIncludeDirectories_227);$(ProjectAdditionalIncludeDirectories_134);$(ProjectAdditionalIncludeDirectories_138);$(ProjectAdditionalIncludeDirectories_139);$(ProjectAdditionalIncludeDirectories_140);$(ProjectAdditionalIncludeDirectories_13);$(ProjectAdditionalIncludeDirectories_14);$(ProjectAdditionalIncludeDirectories_80);$(ProjectAdditionalIncludeDirectories_57);$(ProjectAdditionalIncludeDirectories_17);$(ProjectAdditionalIncludeDirectories_18);$(ProjectAdditionalIncludeDirectories_82);$(ProjectAdditionalIncludeDirectories_63);$(ProjectAdditionalIncludeDirectories_62);$(ProjectAdditionalIncludeDirectories_137);$(ProjectAdditionalIncludeDirectories_135);$(ProjectAdditionalIncludeDirectories_136);$(ProjectAdditionalIncludeDirectories_144);$(ProjectAdditionalIncludeDirectories_208);$(ProjectAdditionalIncludeDirectories_169);$(ProjectAdditionalIncludeDirectories_15);$(ProjectAdditionalIncludeDirectories_16);$(ProjectAdditionalIncludeDirectories_81);$(ProjectAdditionalIncludeDirectories_69);$(ProjectAdditionalIncludeDirectories_143);$(ProjectAdditionalIncludeDirectories_171);$(ProjectAdditionalIncludeDirectories_170);$(ProjectAdditionalIncludeDirectories_197);$(ProjectAdditionalIncludeDirectories_225);$(ProjectAdditionalIncludeDirectories_29);$(ProjectAdditionalIncludeDirectories_30);$(ProjectAdditionalIncludeDirectories_236);$(ProjectAdditionalIncludeDirectories_31);$(ProjectAdditionalIncludeDirectories_32);$(ProjectAdditionalIncludeDirectories_237);$(ProjectAdditionalIncludeDirectories_58);$(ProjectAdditionalIncludeDirectories_186);$(ProjectAdditionalIncludeDirectories_185);$(ProjectAdditionalIncludeDirectories_106);$(ProjectAdditionalIncludeDirectories_107);$(ProjectAdditionalIncludeDirectories_23);$(ProjectAdditionalIncludeDirectories_24);$(ProjectAdditionalIncludeDirectories_83);$(ProjectAdditionalIncludeDirectories_103);$(ProjectAdditionalIncludeDirectories_66);$(ProjectAdditionalIncludeDirectories_100);$(ProjectAdditionalIncludeDirectories_109);$(ProjectAdditionalIncludeDirectories_219);$(ProjectAdditionalIncludeDirectories_226);$(ProjectAdditionalIncludeDirectories_102);$(ProjectAdditionalIncludeDirectories_184);$(ProjectAdditionalIncludeDirectories_79);$(ProjectAdditionalIncludeDirectories_37);$(ProjectAdditionalIncludeDirectories_38);$(ProjectAdditionalIncludeDirectories_85);$(ProjectAdditionalIncludeDirectories_39);$(ProjectAdditionalIncludeDirectories_40);$(ProjectAdditionalIncludeDirectories_118);$(ProjectAdditionalIncludeDirectories_119);$(ProjectAdditionalIncludeDirectories_93);$(ProjectAdditionalIncludeDirectories_94);$(ProjectAdditionalIncludeDirectories_211);$(ProjectAdditionalIncludeDirectories_209);$(ProjectAdditionalIncludeDirectories_210);$(ProjectAdditionalIncludeDirectories_67);$(ProjectAdditionalIncludeDirectories_68);$(ProjectAdditionalIncludeDirectories_60);$(ProjectAdditionalIncludeDirectories_142);$(ProjectAdditionalIncludeDirectories_70);$(ProjectAdditionalIncludeDirectories_91);$(ProjectAdditionalIncludeDirectories_92);$(ProjectAdditionalIncludeDirectories_108);$(ProjectAdditionalIncludeDirectories_96);$(ProjectAdditionalIncludeDirectories_78);$(ProjectAdditionalIncludeDirectories_25);$(ProjectAdditionalIncludeDirectories_26);$(ProjectAdditionalIncludeDirectories_84);$(ProjectAdditionalIncludeDirectories_43);$(ProjectAdditionalIncludeDirectories_44);$(ProjectAdditionalIncludeDirectories_123);$(ProjectAdditionalIncludeDirectories_45);$(ProjectAdditionalIncludeDirectories_46);$(ProjectAdditionalIncludeDirectories_124);$(ProjectAdditionalIncludeDirectories_179);$(ProjectAdditionalIncludeDirectories_190);$(ProjectAdditionalIncludeDirectories_191);$(ProjectAdditionalIncludeDirectories_111);$(ProjectAdditionalIncludeDirectories_110);$(ProjectAdditionalIncludeDirectories_101);$(ProjectAdditionalIncludeDirectories_88);$(ProjectAdditionalIncludeDirectories_112);$(ProjectAdditionalIncludeDirectories_99);$(ProjectAdditionalIncludeDirectories_95);$(ProjectAdditionalIncludeDirectories_104);$(ProjectAdditionalIncludeDirectories_5);$(ProjectAdditionalIncludeDirectories_6);$(ProjectAdditionalIncludeDirectories_114);$(ProjectAdditionalIncludeDirectories_98);$(ProjectAdditionalIncludeDirectories_59);$(ProjectAdditionalIncludeDirectories_72);$(ProjectAdditionalIncludeDirectories_61);$(ProjectAdditionalIncludeDirectories_97);$(ProjectAdditionalIncludeDirectories_33);$(ProjectAdditionalIncludeDirectories_34);$(ProjectAdditionalIncludeDirectories_244);$(ProjectAdditionalIncludeDirectories_205);$(ProjectAdditionalIncludeDirectories_35);$(ProjectAdditionalIncludeDirectories_36);$(ProjectAdditionalIncludeDirectories_238);$(ProjectAdditionalIncludeDirectories_199);$(ProjectAdditionalIncludeDirectories_19);$(ProjectAdditionalIncludeDirectories_20);$(ProjectAdditionalIncludeDirectories_234);$(ProjectAdditionalIncludeDirectories_198);$(ProjectAdditionalIncludeDirectories_159);$(ProjectAdditionalIncludeDirectories_158);$(ProjectAdditionalIncludeDirectories_220);$(ProjectAdditionalIncludeDirectories_200);$(ProjectAdditionalIncludeDirectories_168);$(ProjectAdditionalIncludeDirectories_167);$(ProjectAdditionalIncludeDirectories_166);$(ProjectAdditionalIncludeDirectories_161);$(ProjectAdditionalIncludeDirectories_164);$(ProjectAdditionalIncludeDirectories_163);$(ProjectAdditionalIncludeDirectories_165);$(ProjectAdditionalIncludeDirectories_73);$(ProjectAdditionalIncludeDirectories_194);$(ProjectAdditionalIncludeDirectories_192);$(ProjectAdditionalIncludeDirectories_21);$(ProjectAdditionalIncludeDirectories_22);$(ProjectAdditionalIncludeDirectories_117);$(ProjectAdditionalIncludeDirectories_113);$(ProjectAdditionalIncludeDirectories_187);$(ProjectAdditionalIncludeDirectories_64);$(ProjectAdditionalIncludeDirectories_65);$(ProjectAdditionalIncludeDirectories_7);$(ProjectAdditionalIncludeDirectories_8);$(ProjectAdditionalIncludeDirectories_115);$(ProjectAdditionalIncludeDirectories_9);$(ProjectAdditionalIncludeDirectories_10);$(ProjectAdditionalIncludeDirectories_116);$(ProjectAdditionalIncludeDirectories_77);$(ProjectAdditionalIncludeDirectories_49);$(ProjectAdditionalIncludeDirectories_50);$(ProjectAdditionalIncludeDirectories_86);$(ProjectAdditionalIncludeDirectories_176);$(ProjectAdditionalIncludeDirectories_177);$(ProjectAdditionalIncludeDirectories_239);$(ProjectAdditionalIncludeDirectories_90);$(ProjectAdditionalIncludeDirectories_76);$(ProjectAdditionalIncludeDirectories_74);$(ProjectAdditionalIncludeDirectories_75);$(ProjectAdditionalIncludeDirectories_223);$(ProjectAdditionalIncludeDirectories_71);$(ProjectAdditionalIncludeDirectories_105);..\..\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\UnrealEditor\Inc\JSBSimFlightDynamicsModelEditor\UHT;..\..\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\UnrealEditor\Inc\JSBSimFlightDynamicsModelEditor\VNI;$(ProjectAdditionalIncludeDirectories_2);..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public;$(ProjectAdditionalIncludeDirectories);$(ProjectAdditionalIncludeDirectories_1);$(ProjectAdditionalIncludeDirectories_3);$(ProjectAdditionalIncludeDirectories_51);$(ProjectAdditionalIncludeDirectories_52);$(ProjectAdditionalIncludeDirectories_54);$(ProjectAdditionalIncludeDirectories_53);$(ProjectAdditionalIncludeDirectories_245);$(ProjectAdditionalIncludeDirectories_243);$(ProjectAdditionalIncludeDirectories_242);$(ProjectAdditionalIncludeDirectories_4)</ClCompile_AdditionalIncludeDirectories>
+    <ClCompile_AdditionalIncludeDirectories_1>$(NMakeIncludeSearchPath);$(ProjectAdditionalIncludeDirectories_56);..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private;$(ProjectAdditionalIncludeDirectories);$(ProjectAdditionalIncludeDirectories_1);$(ProjectAdditionalIncludeDirectories_2);$(ProjectAdditionalIncludeDirectories_3);$(ProjectAdditionalIncludeDirectories_149);$(ProjectAdditionalIncludeDirectories_126);$(ProjectAdditionalIncludeDirectories_148);$(ProjectAdditionalIncludeDirectories_27);$(ProjectAdditionalIncludeDirectories_28);$(ProjectAdditionalIncludeDirectories_235);$(ProjectAdditionalIncludeDirectories_147);$(ProjectAdditionalIncludeDirectories_146);$(ProjectAdditionalIncludeDirectories_55);$(ProjectAdditionalIncludeDirectories_154);$(ProjectAdditionalIncludeDirectories_156);$(ProjectAdditionalIncludeDirectories_155);$(ProjectAdditionalIncludeDirectories_145);$(ProjectAdditionalIncludeDirectories_173);$(ProjectAdditionalIncludeDirectories_203);$(ProjectAdditionalIncludeDirectories_204);$(ProjectAdditionalIncludeDirectories_201);$(ProjectAdditionalIncludeDirectories_202);$(ProjectAdditionalIncludeDirectories_180);$(ProjectAdditionalIncludeDirectories_189);$(ProjectAdditionalIncludeDirectories_188);$(ProjectAdditionalIncludeDirectories_229);$(ProjectAdditionalIncludeDirectories_182);$(ProjectAdditionalIncludeDirectories_183);$(ProjectAdditionalIncludeDirectories_131);$(ProjectAdditionalIncludeDirectories_221);$(ProjectAdditionalIncludeDirectories_230);$(ProjectAdditionalIncludeDirectories_181);$(ProjectAdditionalIncludeDirectories_240);$(ProjectAdditionalIncludeDirectories_196);$(ProjectAdditionalIncludeDirectories_195);$(ProjectAdditionalIncludeDirectories_224);$(ProjectAdditionalIncludeDirectories_128);$(ProjectAdditionalIncludeDirectories_127);$(ProjectAdditionalIncludeDirectories_129);$(ProjectAdditionalIncludeDirectories_231);$(ProjectAdditionalIncludeDirectories_133);$(ProjectAdditionalIncludeDirectories_132);$(ProjectAdditionalIncludeDirectories_151);$(ProjectAdditionalIncludeDirectories_152);$(ProjectAdditionalIncludeDirectories_153);$(ProjectAdditionalIncludeDirectories_11);$(ProjectAdditionalIncludeDirectories_12);$(ProjectAdditionalIncludeDirectories_233);$(ProjectAdditionalIncludeDirectories_174);$(ProjectAdditionalIncludeDirectories_175);$(ProjectAdditionalIncludeDirectories_150);$(ProjectAdditionalIncludeDirectories_213);$(ProjectAdditionalIncludeDirectories_214);$(ProjectAdditionalIncludeDirectories_212);$(ProjectAdditionalIncludeDirectories_215);$(ProjectAdditionalIncludeDirectories_141);$(ProjectAdditionalIncludeDirectories_193);$(ProjectAdditionalIncludeDirectories_232);$(ProjectAdditionalIncludeDirectories_228);$(ProjectAdditionalIncludeDirectories_130);$(ProjectAdditionalIncludeDirectories_217);$(ProjectAdditionalIncludeDirectories_216);$(ProjectAdditionalIncludeDirectories_222);$(ProjectAdditionalIncludeDirectories_207);$(ProjectAdditionalIncludeDirectories_206);$(ProjectAdditionalIncludeDirectories_218);$(ProjectAdditionalIncludeDirectories_160);$(ProjectAdditionalIncludeDirectories_157);$(ProjectAdditionalIncludeDirectories_241);$(ProjectAdditionalIncludeDirectories_162);$(ProjectAdditionalIncludeDirectories_47);$(ProjectAdditionalIncludeDirectories_48);$(ProjectAdditionalIncludeDirectories_172);$(ProjectAdditionalIncludeDirectories_178);$(ProjectAdditionalIncludeDirectories_227);$(ProjectAdditionalIncludeDirectories_134);$(ProjectAdditionalIncludeDirectories_138);$(ProjectAdditionalIncludeDirectories_139);$(ProjectAdditionalIncludeDirectories_140);$(ProjectAdditionalIncludeDirectories_13);$(ProjectAdditionalIncludeDirectories_14);$(ProjectAdditionalIncludeDirectories_80);$(ProjectAdditionalIncludeDirectories_57);$(ProjectAdditionalIncludeDirectories_17);$(ProjectAdditionalIncludeDirectories_18);$(ProjectAdditionalIncludeDirectories_82);$(ProjectAdditionalIncludeDirectories_63);$(ProjectAdditionalIncludeDirectories_62);$(ProjectAdditionalIncludeDirectories_137);$(ProjectAdditionalIncludeDirectories_135);$(ProjectAdditionalIncludeDirectories_136);$(ProjectAdditionalIncludeDirectories_144);$(ProjectAdditionalIncludeDirectories_208);$(ProjectAdditionalIncludeDirectories_169);$(ProjectAdditionalIncludeDirectories_15);$(ProjectAdditionalIncludeDirectories_16);$(ProjectAdditionalIncludeDirectories_81);$(ProjectAdditionalIncludeDirectories_69);$(ProjectAdditionalIncludeDirectories_143);$(ProjectAdditionalIncludeDirectories_171);$(ProjectAdditionalIncludeDirectories_170);$(ProjectAdditionalIncludeDirectories_197);$(ProjectAdditionalIncludeDirectories_225);$(ProjectAdditionalIncludeDirectories_29);$(ProjectAdditionalIncludeDirectories_30);$(ProjectAdditionalIncludeDirectories_236);$(ProjectAdditionalIncludeDirectories_31);$(ProjectAdditionalIncludeDirectories_32);$(ProjectAdditionalIncludeDirectories_237);$(ProjectAdditionalIncludeDirectories_58);$(ProjectAdditionalIncludeDirectories_186);$(ProjectAdditionalIncludeDirectories_185);$(ProjectAdditionalIncludeDirectories_106);$(ProjectAdditionalIncludeDirectories_107);$(ProjectAdditionalIncludeDirectories_87);$(ProjectAdditionalIncludeDirectories_23);$(ProjectAdditionalIncludeDirectories_24);$(ProjectAdditionalIncludeDirectories_83);$(ProjectAdditionalIncludeDirectories_41);$(ProjectAdditionalIncludeDirectories_42);$(ProjectAdditionalIncludeDirectories_125);$(ProjectAdditionalIncludeDirectories_120);$(ProjectAdditionalIncludeDirectories_122);$(ProjectAdditionalIncludeDirectories_121);$(ProjectAdditionalIncludeDirectories_90);$(ProjectAdditionalIncludeDirectories_61);$(ProjectAdditionalIncludeDirectories_98);$(ProjectAdditionalIncludeDirectories_59);$(ProjectAdditionalIncludeDirectories_89);$(ProjectAdditionalIncludeDirectories_103);$(ProjectAdditionalIncludeDirectories_72);$(ProjectAdditionalIncludeDirectories_102);$(ProjectAdditionalIncludeDirectories_184);$(ProjectAdditionalIncludeDirectories_97);$(ProjectAdditionalIncludeDirectories_219);$(ProjectAdditionalIncludeDirectories_76);$(ProjectAdditionalIncludeDirectories_74);$(ProjectAdditionalIncludeDirectories_75);$(ProjectAdditionalIncludeDirectories_223);$(ProjectAdditionalIncludeDirectories_71);$(ProjectAdditionalIncludeDirectories_105);$(ProjectAdditionalIncludeDirectories_176);$(ProjectAdditionalIncludeDirectories_177);$(ProjectAdditionalIncludeDirectories_111);$(ProjectAdditionalIncludeDirectories_110);$(ProjectAdditionalIncludeDirectories_101);$(ProjectAdditionalIncludeDirectories_88);$(ProjectAdditionalIncludeDirectories_112);$(ProjectAdditionalIncludeDirectories_95);$(ProjectAdditionalIncludeDirectories_66);$(ProjectAdditionalIncludeDirectories_100);$(ProjectAdditionalIncludeDirectories_109);$(ProjectAdditionalIncludeDirectories_226);$(ProjectAdditionalIncludeDirectories_79);$(ProjectAdditionalIncludeDirectories_37);$(ProjectAdditionalIncludeDirectories_38);$(ProjectAdditionalIncludeDirectories_85);$(ProjectAdditionalIncludeDirectories_39);$(ProjectAdditionalIncludeDirectories_40);$(ProjectAdditionalIncludeDirectories_118);$(ProjectAdditionalIncludeDirectories_119);$(ProjectAdditionalIncludeDirectories_93);$(ProjectAdditionalIncludeDirectories_94);$(ProjectAdditionalIncludeDirectories_211);$(ProjectAdditionalIncludeDirectories_209);$(ProjectAdditionalIncludeDirectories_210);$(ProjectAdditionalIncludeDirectories_67);$(ProjectAdditionalIncludeDirectories_68);$(ProjectAdditionalIncludeDirectories_60);$(ProjectAdditionalIncludeDirectories_142);$(ProjectAdditionalIncludeDirectories_70);$(ProjectAdditionalIncludeDirectories_91);$(ProjectAdditionalIncludeDirectories_92);$(ProjectAdditionalIncludeDirectories_33);$(ProjectAdditionalIncludeDirectories_34);$(ProjectAdditionalIncludeDirectories_244);$(ProjectAdditionalIncludeDirectories_108);$(ProjectAdditionalIncludeDirectories_96);$(ProjectAdditionalIncludeDirectories_78);$(ProjectAdditionalIncludeDirectories_25);$(ProjectAdditionalIncludeDirectories_26);$(ProjectAdditionalIncludeDirectories_84);$(ProjectAdditionalIncludeDirectories_43);$(ProjectAdditionalIncludeDirectories_44);$(ProjectAdditionalIncludeDirectories_123);$(ProjectAdditionalIncludeDirectories_45);$(ProjectAdditionalIncludeDirectories_46);$(ProjectAdditionalIncludeDirectories_124);$(ProjectAdditionalIncludeDirectories_179);$(ProjectAdditionalIncludeDirectories_190);$(ProjectAdditionalIncludeDirectories_191);$(ProjectAdditionalIncludeDirectories_99);$(ProjectAdditionalIncludeDirectories_104);$(ProjectAdditionalIncludeDirectories_5);$(ProjectAdditionalIncludeDirectories_6);$(ProjectAdditionalIncludeDirectories_114);$(ProjectAdditionalIncludeDirectories_205);$(ProjectAdditionalIncludeDirectories_35);$(ProjectAdditionalIncludeDirectories_36);$(ProjectAdditionalIncludeDirectories_238);$(ProjectAdditionalIncludeDirectories_199);$(ProjectAdditionalIncludeDirectories_19);$(ProjectAdditionalIncludeDirectories_20);$(ProjectAdditionalIncludeDirectories_234);$(ProjectAdditionalIncludeDirectories_198);$(ProjectAdditionalIncludeDirectories_159);$(ProjectAdditionalIncludeDirectories_158);$(ProjectAdditionalIncludeDirectories_220);$(ProjectAdditionalIncludeDirectories_200);$(ProjectAdditionalIncludeDirectories_168);$(ProjectAdditionalIncludeDirectories_167);$(ProjectAdditionalIncludeDirectories_166);$(ProjectAdditionalIncludeDirectories_161);$(ProjectAdditionalIncludeDirectories_164);$(ProjectAdditionalIncludeDirectories_163);$(ProjectAdditionalIncludeDirectories_165);$(ProjectAdditionalIncludeDirectories_73);$(ProjectAdditionalIncludeDirectories_194);$(ProjectAdditionalIncludeDirectories_192);$(ProjectAdditionalIncludeDirectories_21);$(ProjectAdditionalIncludeDirectories_22);$(ProjectAdditionalIncludeDirectories_117);$(ProjectAdditionalIncludeDirectories_113);$(ProjectAdditionalIncludeDirectories_187);$(ProjectAdditionalIncludeDirectories_64);$(ProjectAdditionalIncludeDirectories_65);$(ProjectAdditionalIncludeDirectories_7);$(ProjectAdditionalIncludeDirectories_8);$(ProjectAdditionalIncludeDirectories_115);$(ProjectAdditionalIncludeDirectories_9);$(ProjectAdditionalIncludeDirectories_10);$(ProjectAdditionalIncludeDirectories_116);$(ProjectAdditionalIncludeDirectories_77);$(ProjectAdditionalIncludeDirectories_49);$(ProjectAdditionalIncludeDirectories_50);$(ProjectAdditionalIncludeDirectories_86);$(ProjectAdditionalIncludeDirectories_239);$(ProjectAdditionalIncludeDirectories_51);$(ProjectAdditionalIncludeDirectories_52);$(ProjectAdditionalIncludeDirectories_54);$(ProjectAdditionalIncludeDirectories_53);$(ProjectAdditionalIncludeDirectories_245);$(ProjectAdditionalIncludeDirectories_243);$(ProjectAdditionalIncludeDirectories_242);$(ProjectAdditionalIncludeDirectories_4)</ClCompile_AdditionalIncludeDirectories_1>
+    <ClCompile_AdditionalIncludeDirectories_2>$(NMakeIncludeSearchPath);$(ProjectAdditionalIncludeDirectories_56);$(ProjectAdditionalIncludeDirectories);$(ProjectAdditionalIncludeDirectories_1);$(ProjectAdditionalIncludeDirectories_2);$(ProjectAdditionalIncludeDirectories_3);$(ProjectAdditionalIncludeDirectories_149);$(ProjectAdditionalIncludeDirectories_126);$(ProjectAdditionalIncludeDirectories_148);$(ProjectAdditionalIncludeDirectories_27);$(ProjectAdditionalIncludeDirectories_28);$(ProjectAdditionalIncludeDirectories_235);$(ProjectAdditionalIncludeDirectories_147);$(ProjectAdditionalIncludeDirectories_146);$(ProjectAdditionalIncludeDirectories_55);$(ProjectAdditionalIncludeDirectories_154);$(ProjectAdditionalIncludeDirectories_156);$(ProjectAdditionalIncludeDirectories_155);$(ProjectAdditionalIncludeDirectories_145);$(ProjectAdditionalIncludeDirectories_173);$(ProjectAdditionalIncludeDirectories_203);$(ProjectAdditionalIncludeDirectories_204);$(ProjectAdditionalIncludeDirectories_201);$(ProjectAdditionalIncludeDirectories_202);$(ProjectAdditionalIncludeDirectories_180);$(ProjectAdditionalIncludeDirectories_189);$(ProjectAdditionalIncludeDirectories_188);$(ProjectAdditionalIncludeDirectories_229);$(ProjectAdditionalIncludeDirectories_182);$(ProjectAdditionalIncludeDirectories_183);$(ProjectAdditionalIncludeDirectories_131);$(ProjectAdditionalIncludeDirectories_221);$(ProjectAdditionalIncludeDirectories_230);$(ProjectAdditionalIncludeDirectories_181);$(ProjectAdditionalIncludeDirectories_240);$(ProjectAdditionalIncludeDirectories_196);$(ProjectAdditionalIncludeDirectories_195);$(ProjectAdditionalIncludeDirectories_224);$(ProjectAdditionalIncludeDirectories_128);$(ProjectAdditionalIncludeDirectories_127);$(ProjectAdditionalIncludeDirectories_129);$(ProjectAdditionalIncludeDirectories_231);$(ProjectAdditionalIncludeDirectories_133);$(ProjectAdditionalIncludeDirectories_132);$(ProjectAdditionalIncludeDirectories_151);$(ProjectAdditionalIncludeDirectories_152);$(ProjectAdditionalIncludeDirectories_153);$(ProjectAdditionalIncludeDirectories_11);$(ProjectAdditionalIncludeDirectories_12);$(ProjectAdditionalIncludeDirectories_233);$(ProjectAdditionalIncludeDirectories_174);$(ProjectAdditionalIncludeDirectories_175);$(ProjectAdditionalIncludeDirectories_150);$(ProjectAdditionalIncludeDirectories_213);$(ProjectAdditionalIncludeDirectories_214);$(ProjectAdditionalIncludeDirectories_212);$(ProjectAdditionalIncludeDirectories_215);$(ProjectAdditionalIncludeDirectories_141);$(ProjectAdditionalIncludeDirectories_193);$(ProjectAdditionalIncludeDirectories_232);$(ProjectAdditionalIncludeDirectories_228);$(ProjectAdditionalIncludeDirectories_130);$(ProjectAdditionalIncludeDirectories_217);$(ProjectAdditionalIncludeDirectories_216);$(ProjectAdditionalIncludeDirectories_222);$(ProjectAdditionalIncludeDirectories_207);$(ProjectAdditionalIncludeDirectories_206);$(ProjectAdditionalIncludeDirectories_218);$(ProjectAdditionalIncludeDirectories_160);$(ProjectAdditionalIncludeDirectories_157);$(ProjectAdditionalIncludeDirectories_241);$(ProjectAdditionalIncludeDirectories_162);$(ProjectAdditionalIncludeDirectories_47);$(ProjectAdditionalIncludeDirectories_48);$(ProjectAdditionalIncludeDirectories_172);$(ProjectAdditionalIncludeDirectories_178);$(ProjectAdditionalIncludeDirectories_227);$(ProjectAdditionalIncludeDirectories_134);$(ProjectAdditionalIncludeDirectories_138);$(ProjectAdditionalIncludeDirectories_139);$(ProjectAdditionalIncludeDirectories_140);$(ProjectAdditionalIncludeDirectories_13);$(ProjectAdditionalIncludeDirectories_14);$(ProjectAdditionalIncludeDirectories_80);$(ProjectAdditionalIncludeDirectories_57);$(ProjectAdditionalIncludeDirectories_17);$(ProjectAdditionalIncludeDirectories_18);$(ProjectAdditionalIncludeDirectories_82);$(ProjectAdditionalIncludeDirectories_63);$(ProjectAdditionalIncludeDirectories_62);$(ProjectAdditionalIncludeDirectories_137);$(ProjectAdditionalIncludeDirectories_135);$(ProjectAdditionalIncludeDirectories_136);$(ProjectAdditionalIncludeDirectories_144);$(ProjectAdditionalIncludeDirectories_208);$(ProjectAdditionalIncludeDirectories_169);$(ProjectAdditionalIncludeDirectories_15);$(ProjectAdditionalIncludeDirectories_16);$(ProjectAdditionalIncludeDirectories_81);$(ProjectAdditionalIncludeDirectories_69);$(ProjectAdditionalIncludeDirectories_143);$(ProjectAdditionalIncludeDirectories_171);$(ProjectAdditionalIncludeDirectories_170);$(ProjectAdditionalIncludeDirectories_197);$(ProjectAdditionalIncludeDirectories_225);$(ProjectAdditionalIncludeDirectories_29);$(ProjectAdditionalIncludeDirectories_30);$(ProjectAdditionalIncludeDirectories_236);$(ProjectAdditionalIncludeDirectories_31);$(ProjectAdditionalIncludeDirectories_32);$(ProjectAdditionalIncludeDirectories_237);$(ProjectAdditionalIncludeDirectories_58);$(ProjectAdditionalIncludeDirectories_186);$(ProjectAdditionalIncludeDirectories_185);$(ProjectAdditionalIncludeDirectories_106);$(ProjectAdditionalIncludeDirectories_107);$(ProjectAdditionalIncludeDirectories_87);$(ProjectAdditionalIncludeDirectories_23);$(ProjectAdditionalIncludeDirectories_24);$(ProjectAdditionalIncludeDirectories_83);$(ProjectAdditionalIncludeDirectories_41);$(ProjectAdditionalIncludeDirectories_42);$(ProjectAdditionalIncludeDirectories_125);$(ProjectAdditionalIncludeDirectories_120);$(ProjectAdditionalIncludeDirectories_122);$(ProjectAdditionalIncludeDirectories_121);$(ProjectAdditionalIncludeDirectories_90);$(ProjectAdditionalIncludeDirectories_61);$(ProjectAdditionalIncludeDirectories_98);$(ProjectAdditionalIncludeDirectories_59);$(ProjectAdditionalIncludeDirectories_89);$(ProjectAdditionalIncludeDirectories_103);$(ProjectAdditionalIncludeDirectories_72);$(ProjectAdditionalIncludeDirectories_102);$(ProjectAdditionalIncludeDirectories_184);$(ProjectAdditionalIncludeDirectories_97);$(ProjectAdditionalIncludeDirectories_219);$(ProjectAdditionalIncludeDirectories_76);$(ProjectAdditionalIncludeDirectories_74);$(ProjectAdditionalIncludeDirectories_75);$(ProjectAdditionalIncludeDirectories_223);$(ProjectAdditionalIncludeDirectories_71);$(ProjectAdditionalIncludeDirectories_105);$(ProjectAdditionalIncludeDirectories_176);$(ProjectAdditionalIncludeDirectories_177);$(ProjectAdditionalIncludeDirectories_111);$(ProjectAdditionalIncludeDirectories_110);$(ProjectAdditionalIncludeDirectories_101);$(ProjectAdditionalIncludeDirectories_88);$(ProjectAdditionalIncludeDirectories_112);$(ProjectAdditionalIncludeDirectories_95);$(ProjectAdditionalIncludeDirectories_66);$(ProjectAdditionalIncludeDirectories_100);$(ProjectAdditionalIncludeDirectories_109);$(ProjectAdditionalIncludeDirectories_226);$(ProjectAdditionalIncludeDirectories_79);$(ProjectAdditionalIncludeDirectories_37);$(ProjectAdditionalIncludeDirectories_38);$(ProjectAdditionalIncludeDirectories_85);$(ProjectAdditionalIncludeDirectories_39);$(ProjectAdditionalIncludeDirectories_40);$(ProjectAdditionalIncludeDirectories_118);$(ProjectAdditionalIncludeDirectories_119);$(ProjectAdditionalIncludeDirectories_93);$(ProjectAdditionalIncludeDirectories_94);$(ProjectAdditionalIncludeDirectories_211);$(ProjectAdditionalIncludeDirectories_209);$(ProjectAdditionalIncludeDirectories_210);$(ProjectAdditionalIncludeDirectories_67);$(ProjectAdditionalIncludeDirectories_68);$(ProjectAdditionalIncludeDirectories_60);$(ProjectAdditionalIncludeDirectories_142);$(ProjectAdditionalIncludeDirectories_70);$(ProjectAdditionalIncludeDirectories_91);$(ProjectAdditionalIncludeDirectories_92);$(ProjectAdditionalIncludeDirectories_33);$(ProjectAdditionalIncludeDirectories_34);$(ProjectAdditionalIncludeDirectories_244);$(ProjectAdditionalIncludeDirectories_108);$(ProjectAdditionalIncludeDirectories_96);$(ProjectAdditionalIncludeDirectories_78);$(ProjectAdditionalIncludeDirectories_25);$(ProjectAdditionalIncludeDirectories_26);$(ProjectAdditionalIncludeDirectories_84);$(ProjectAdditionalIncludeDirectories_43);$(ProjectAdditionalIncludeDirectories_44);$(ProjectAdditionalIncludeDirectories_123);$(ProjectAdditionalIncludeDirectories_45);$(ProjectAdditionalIncludeDirectories_46);$(ProjectAdditionalIncludeDirectories_124);$(ProjectAdditionalIncludeDirectories_179);$(ProjectAdditionalIncludeDirectories_190);$(ProjectAdditionalIncludeDirectories_191);$(ProjectAdditionalIncludeDirectories_99);$(ProjectAdditionalIncludeDirectories_104);$(ProjectAdditionalIncludeDirectories_5);$(ProjectAdditionalIncludeDirectories_6);$(ProjectAdditionalIncludeDirectories_114);$(ProjectAdditionalIncludeDirectories_205);$(ProjectAdditionalIncludeDirectories_35);$(ProjectAdditionalIncludeDirectories_36);$(ProjectAdditionalIncludeDirectories_238);$(ProjectAdditionalIncludeDirectories_199);$(ProjectAdditionalIncludeDirectories_19);$(ProjectAdditionalIncludeDirectories_20);$(ProjectAdditionalIncludeDirectories_234);$(ProjectAdditionalIncludeDirectories_198);$(ProjectAdditionalIncludeDirectories_159);$(ProjectAdditionalIncludeDirectories_158);$(ProjectAdditionalIncludeDirectories_220);$(ProjectAdditionalIncludeDirectories_200);$(ProjectAdditionalIncludeDirectories_168);$(ProjectAdditionalIncludeDirectories_167);$(ProjectAdditionalIncludeDirectories_166);$(ProjectAdditionalIncludeDirectories_161);$(ProjectAdditionalIncludeDirectories_164);$(ProjectAdditionalIncludeDirectories_163);$(ProjectAdditionalIncludeDirectories_165);$(ProjectAdditionalIncludeDirectories_73);$(ProjectAdditionalIncludeDirectories_194);$(ProjectAdditionalIncludeDirectories_192);$(ProjectAdditionalIncludeDirectories_21);$(ProjectAdditionalIncludeDirectories_22);$(ProjectAdditionalIncludeDirectories_117);$(ProjectAdditionalIncludeDirectories_113);$(ProjectAdditionalIncludeDirectories_187);$(ProjectAdditionalIncludeDirectories_64);$(ProjectAdditionalIncludeDirectories_65);$(ProjectAdditionalIncludeDirectories_7);$(ProjectAdditionalIncludeDirectories_8);$(ProjectAdditionalIncludeDirectories_115);$(ProjectAdditionalIncludeDirectories_9);$(ProjectAdditionalIncludeDirectories_10);$(ProjectAdditionalIncludeDirectories_116);$(ProjectAdditionalIncludeDirectories_77);$(ProjectAdditionalIncludeDirectories_49);$(ProjectAdditionalIncludeDirectories_50);$(ProjectAdditionalIncludeDirectories_86);$(ProjectAdditionalIncludeDirectories_239);$(ProjectAdditionalIncludeDirectories_51);$(ProjectAdditionalIncludeDirectories_52);$(ProjectAdditionalIncludeDirectories_54);$(ProjectAdditionalIncludeDirectories_53);..\Build\Win64\UnrealEditor\Inc\UEReferenceApp\UHT;..\Build\Win64\UnrealEditor\Inc\UEReferenceApp\VNI;..\..\Source;$(ProjectAdditionalIncludeDirectories_245);$(ProjectAdditionalIncludeDirectories_243);$(ProjectAdditionalIncludeDirectories_242);$(ProjectAdditionalIncludeDirectories_4)</ClCompile_AdditionalIncludeDirectories_2>
+    <ProjectForcedIncludeFiles>$(SolutionDir)Intermediate\Build\Win64\x64\UEReferenceAppEditor\Development\Engine\SharedPCH.Engine.Cpp17.InclOrderUnreal5_0.h</ProjectForcedIncludeFiles>
+    <ClCompile_ForcedIncludeFiles>$(SolutionDir)Intermediate\Build\Win64\x64\UEReferenceAppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp17.InclOrderUnreal5_0.h;$(SolutionDir)Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\x64\UnrealEditor\Development\JSBSimFlightDynamicsModelEditor\Definitions.JSBSimFlightDynamicsModelEditor.h</ClCompile_ForcedIncludeFiles>
+    <ClCompile_ForcedIncludeFiles_1>$(ProjectForcedIncludeFiles);$(SolutionDir)Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\x64\UnrealEditor\Development\JSBSimFlightDynamicsModel\Definitions.JSBSimFlightDynamicsModel.h</ClCompile_ForcedIncludeFiles_1>
+    <ClCompile_ForcedIncludeFiles_2>$(ProjectForcedIncludeFiles);$(SolutionDir)Intermediate\Build\Win64\x64\UnrealEditor\Development\UEReferenceApp\Definitions.UEReferenceApp.h</ClCompile_ForcedIncludeFiles_2>
+    <ClCompile_AdditionalOptions>$(AdditionalOptions) /Yu"$(SolutionDir)Intermediate\Build\Win64\x64\UEReferenceAppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp17.InclOrderUnreal5_0.h"</ClCompile_AdditionalOptions>
+    <ClCompile_AdditionalOptions_1>$(AdditionalOptions) /Yu"$(SolutionDir)Intermediate\Build\Win64\x64\UEReferenceAppEditor\Development\Engine\SharedPCH.Engine.Cpp17.InclOrderUnreal5_0.h"</ClCompile_AdditionalOptions_1>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\UEReferenceApp.uproject"/>
+    <None Include="..\..\Source\UEReferenceApp.Target.cs"/>
+    <None Include="..\..\Source\UEReferenceAppEditor.Target.cs"/>
+    <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\CleanProject.bat"/>
+    <None Include="..\..\CleanProject.sh"/>
+    <None Include="..\..\LICENSE.txt"/>
+    <None Include="..\..\README-Unix.md"/>
+    <None Include="..\..\README.md"/>
+    <None Include="..\..\UEReferenceApp.png"/>
+    <None Include="..\..\Config\DefaultEditor.ini"/>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini"/>
+    <None Include="..\..\Config\DefaultEngine.ini"/>
+    <None Include="..\..\Config\DefaultGame.ini"/>
+    <None Include="..\..\Config\DefaultInput.ini"/>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\JSBSimFlightDynamicsModelEditor.Build.cs"/>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private\JSBSimModuleEditor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Private\JSBSimMovementCompVisualizer.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public\JSBSimModuleEditor.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModelEditor\Public\JSBSimMovementCompVisualizer.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\JSBSimFlightDynamicsModel.uplugin"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\Icon128.png"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\aircraft_template.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\737.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\cruise_init.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\cruise_steady_turn_init.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\737\rudder_kick_init.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\787-8.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\Authors.txt"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\787-8\README"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320\A320.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A320\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4\A4.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\A4\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\ah1s.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines\electric_1500hp.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Engines\electric_1hp_dummy.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\rotor_control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\steady_flight_data.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ah1s\Systems\trim_control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\B17.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B17\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\B747.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\B747\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\ball.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\iss_orbit.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset00_v2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ball\reset01_v2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\blank.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\blank\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314\Boeing314.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Boeing314\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\C130.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\C130\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\c172p.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\README.flightmodel.c172p"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172p\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\c172r.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\README.c172r"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172r\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\c172ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\c172x.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\elevator_doublet_init.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\output.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c172x\reset_at_rest.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\c182.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\README.c182"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c182\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\c310.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\c310ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\ellington.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\README.c310"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\c310\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\README"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\sopwithCamel1F1jsb.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems\automixture.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Camel\Systems\crash-detect.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\Concorde.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Concorde\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\DHC6.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\info.txt"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines\Propeller.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Engines\PT6A-27.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Conventional Controls.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Flaps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Landing Gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\DHC6\Systems\Propulsion.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\dr1.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems\chocks.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\dr1\Systems\pushback.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\f104.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\armament.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\beacon.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\BLC.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\canopy.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\chute.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\crash-detect.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-pitch.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-roll.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\FCS-yaw.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\flaps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\NWS.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\radar.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\speedbrakes.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f104\Systems\tailhook.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15\f15.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f15\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\f16.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\README"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems\hook.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f16\Systems\pushback.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\f22.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\README"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\f22\yf22.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Effectors.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\F450.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\FlightControl.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\initGrnd.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Mass.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Metrics.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F450\Propulsion.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\F4N-jsbsim.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\F4N.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines\direct.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F4N\Engines\J79-GE-11A.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C\F80C.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\F80C\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Fokker-F70.html"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\fokker100.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\fokker70.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\info.txt"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\xf100.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker100\Systems\pushback.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50\fokker50.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\fokker50\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\airborne.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\global5000apx.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts\trim-cruise.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\global5000\scripts\trim-cruise_ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\J246.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\LC39.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246ControlSystem.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246FirstStageEffectors.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246GuidanceExecutive.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J246\Systems\J246SecondStageEffectors.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\J3Cub.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines\CM7445 MCCauley.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Engines\Continental A-65-8.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\J3Cub\Systems\Conventional Controls.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\L17.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L17\navion.tsf"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\L410.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\L410\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\LM\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\MD11\MD11.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\minisgs.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\minisgs\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\mk82.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\mk82\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\OV10.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\OV10\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\p51d.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\reset4-00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines\P51prop.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Engines\Packard-V-1650-7.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\alpha-buffet.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\autothrottle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\compressability.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\crash-detect.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\electrical.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\mixture-control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\propulsion.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\p51d\Systems\weapons-weight.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\pa28.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pa28\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\paraglider.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines\DT_Propeller.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Engines\Polini_THOR80.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\paraglider\Systems\Controls.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\pc7.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines\Propeller.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Engines\PT6A.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Conventional Controls.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Flaps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pc7\Systems\Landing Gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\pogo-jsbsim.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines\Pogo_prop.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\pogo-jsbsim\Engines\YT40-A-16.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Pterosaur.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Landing Gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Ornithopter Controls.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Pterosaur\Systems\Wing Motion.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\SGS\SGS.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs126\sgs126.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\sgs233\sgs233.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\output.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset02.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\reset03.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Short_S23.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\datcom_aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\electrical.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\engines.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\flaps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\fuel-system.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\Short_S23-hydrodynamics.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Short_S23\Systems\take-off-ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Shuttle\Shuttle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Submarine_Scout.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\takeoff.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\air-and-gas-control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\gerris_aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\Submarine_Scout\Systems\Submarine_Scout_crew_ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T37\T37.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\T38\T38.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\t6texan2\t6texan2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\balloon_log.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\reset10.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\weather-balloon\weather-balloon.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\README.wrightFlyer1903.html"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\wrightFlyer1903.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\wrightFlyer1903\wrightFlyer1905.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\reset01.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\X15.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\X15\X15ap.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\x24b\x24b.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\XB-70\XB-70.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\INSTALL"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\reset00.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\ZLT-NT.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\air-and-gas-control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\datcom_aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\engine-control.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\gerris_aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\aircraft\ZLT-NT\Systems\instrumentation.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\ah1s_rotor.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\ah1s_tail_rotor.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\AJ26-33A.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\AJ26-33_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\avco_lycoming_t53.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\BR-725.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\BR710.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CamelProp.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CF6-80C2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CFM56.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\CFM56_5.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Clerget9B.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\direct.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\DJI_9450.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\DJI_E305.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\dowty-rotol-aero.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Dr1_propeller.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\dummy.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\electric147kW.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\electric_1mw.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO360C.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO470D.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engIO540AB1A5.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engRRMerlin61.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engRRMerlinXII.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\engtm601.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_io320.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_O-200.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_PegasusXc.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\eng_RRhawk.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Estes_E9.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\F100-PW-229.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\F119-PW-1.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\GE-CF6-80C2-B1F.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\HamiltonStd6243A-3.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J33-A-35.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J52.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J69-T25.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J79-GE-11A.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\J85-GE-5.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\JT9D-3.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\LMdescent.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\LM_descent_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\MerlinV1650.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Oberursel-UrII.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Olympus593Mrk610.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\P51prop.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop30FP2B.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC10v.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC6v.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propC8v.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propDA-R352_6-123-F_2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propHO-V373-D.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\propHS139v.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_75in2f.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_81in2v.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_Clark_Y7570.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_deHavilland5000.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_generic2f.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_PT6.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\prop_SSZ.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PT6A-27.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PT6A-68.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PW125B.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\PW125BX.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\R-1820-97.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RB211-524.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RL10.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RL10_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\RollsRoyce.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\s64_rotor.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SRB.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SRB_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SSME.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\SSME_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\t56.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\t56_prop.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\T76.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Tay-620.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Tay-651.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\test_turbine.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\TRENT-900.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\trent_1000.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\twin_pratt_and_whitney_t73.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\vrtule2.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1903_engine.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1903_propellers.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\wright1905_engine.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\WrightGR-2600.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\XLR99.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\xlr99_nozzle.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\YJ93-GE-3.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\engine\Zenoah_G-26A.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\accelerometers.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\afcs.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\airship-mooring.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\airship_added_mass.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\alpha_buffet.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\Autopilot.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\BLC.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\catapult.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-pitch.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-roll.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\FCS-yaw.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\flaps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\gear.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\GNCUtilities.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\holdback.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hook.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamic-planing-floats.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamic-planing.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\hydrodynamics.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\jsb_glue.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\NWS.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\refuel.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\rpm_governor.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorBaro.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorGps.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\SensorImu.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\speedbrakes.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\sperry-a2-autopilot.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\tail_wheel_lock.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Resources\JSBSim\systems\visual-reference-point-extensions.xml"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\JSBSimFlightDynamicsModel.Build.cs"/>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\JSBSimModule.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\JSBSimMovementComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Private\UEGroundCallback.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_1)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_1)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\FDMTypes.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\JSBSimModule.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\JSBSimMovementComponent.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\JSBSimFlightDynamicsModel\Public\UEGroundCallback.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim.Build.cs"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\JSBSim_APL.xml"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\FGFDMExec.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\FGJSBBase.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\JSBSim_API.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Config.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Constants.hpp"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Geodesic.hpp"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\GeodesicLine.hpp"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\GeographicLib\Math.hpp"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGInitialCondition.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGLinearization.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGSimplexTrim.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrim.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAnalysis.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAnalysisControl.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimAxis.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\initialization\FGTrimmer.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGfdmSocket.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGGroundCallback.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGInputSocket.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGInputType.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGModelLoader.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputFG.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputFile.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputSocket.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputTextFile.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGOutputType.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGPropertyManager.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGPropertyReader.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGScript.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGUDPInputSocket.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLElement.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLFileRead.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\FGXMLParse.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\net_fdm.hxx"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\input_output\string_utilities.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGColumnVector3.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGCondition.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGFunction.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGFunctionValue.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGLocation.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGMatrix33.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGModelFunctions.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGNelderMead.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGParameter.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGParameterValue.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGPropertyValue.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGQuaternion.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGRealValue.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGRungeKutta.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGStateSpace.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGTable.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\FGTemplateFunc.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\math\LagrangeMultiplier.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAccelerations.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAerodynamics.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAircraft.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAtmosphere.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGAuxiliary.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGBuoyantForces.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGExternalForce.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGExternalReactions.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGFCS.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGFCSChannel.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGGasCell.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGGroundReactions.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGInertial.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGInput.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGLGear.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGMassBalance.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGModel.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGOutput.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGPropagate.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGPropulsion.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\FGSurface.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGMars.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGMSIS.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGStandardAtmosphere.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\FGWinds.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\atmosphere\MSIS\nrlmsise-00.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGAccelerometer.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGActuator.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGAngles.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGDeadBand.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGDistributor.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFCSComponent.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFCSFunction.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGFilter.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGGain.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGGyro.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGKinemat.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGLinearActuator.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGMagnetometer.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGPID.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSensor.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSensorOrientation.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSummer.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGSwitch.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\flight_control\FGWaypoint.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGBrushLessDCMotor.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGElectric.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGEngine.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGForce.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGNozzle.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGPiston.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGPropeller.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGRocket.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGRotor.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTank.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGThruster.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTransmission.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTurbine.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\models\propulsion\FGTurboProp.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\compiler.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\io\iostreams\sgstream.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\magvar\coremag.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\sg_path.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\stdint.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\misc\strutils.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\props\props.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure\SGReferenced.hxx"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\structure\SGSharedPtr.hxx"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\ascii.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\asciitab.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\easyxml.hxx"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat_config.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\expat_external.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\iasciitab.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\internal.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\latin1tab.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\macconfig.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\nametab.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\siphash.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\utf8tab.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\winconfig.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmlrole.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmltok.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\simgear\xml\xmltok_impl.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities\datafile.h"/>
+    <ClInclude Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Include\utilities\plotXMLVisitor.h"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.dll"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.exp"/>
+    <None Include="..\..\Plugins\JSBSimFlightDynamicsModel\Source\ThirdParty\JSBSim\Lib\JSBSim.lib"/>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyActor.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyActor.h"/>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyClass.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyClass.h"/>
+    <ClCompile Include="..\..\Source\UEReferenceApp\MyHUD.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\MyHUD.h"/>
+    <None Include="..\..\Source\UEReferenceApp\UEReferenceApp.Build.cs"/>
+    <ClCompile Include="..\..\Source\UEReferenceApp\UEReferenceApp.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\UEReferenceApp.h"/>
+    <ClCompile Include="..\..\Source\UEReferenceApp\UEReferenceAppGameModeBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories_2)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles_2)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions_1)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\UEReferenceApp\UEReferenceAppGameModeBase.h"/>
+  </ItemGroup>
+  <PropertyGroup>
+    <SourcePath>C:\Program Files\Epic Games\UE_5.3\Engine\Source\ThirdParty\Android\detex;</SourcePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <PropertyGroup>
+    <CleanDependsOn> $(CleanDependsOn); </CleanDependsOn>
+    <CppCleanDependsOn></CppCleanDependsOn>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

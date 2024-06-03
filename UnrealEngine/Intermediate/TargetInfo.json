@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "UEReferenceApp",
+			"Path": "..\\Source\\UEReferenceApp.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UEReferenceAppEditor",
+			"Path": "..\\Source\\UEReferenceAppEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

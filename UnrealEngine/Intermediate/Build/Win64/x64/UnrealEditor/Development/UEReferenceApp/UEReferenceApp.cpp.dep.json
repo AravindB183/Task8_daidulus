@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\usra_task8\\task8_daidulus\\unrealengine\\source\\uereferenceapp\\uereferenceapp.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\usra_task8\\task8_daidulus\\unrealengine\\intermediate\\build\\win64\\x64\\uereferenceappeditor\\development\\engine\\sharedpch.engine.cpp17.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\usra_task8\\task8_daidulus\\unrealengine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\uereferenceapp\\definitions.uereferenceapp.h",
+            "d:\\usra_task8\\task8_daidulus\\unrealengine\\source\\uereferenceapp\\uereferenceapp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

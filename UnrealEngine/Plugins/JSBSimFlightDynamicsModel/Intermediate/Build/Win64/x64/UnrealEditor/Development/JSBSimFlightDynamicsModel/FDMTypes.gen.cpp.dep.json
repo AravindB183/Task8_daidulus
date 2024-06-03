@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\usra_task8\\task8\\unrealengine\\plugins\\jsbsimflightdynamicsmodel\\intermediate\\build\\win64\\unrealeditor\\inc\\jsbsimflightdynamicsmodel\\uht\\fdmtypes.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\usra_task8\\task8\\unrealengine\\intermediate\\build\\win64\\x64\\uereferenceappeditor\\development\\engine\\sharedpch.engine.cpp17.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "d:\\usra_task8\\task8\\unrealengine\\plugins\\jsbsimflightdynamicsmodel\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\jsbsimflightdynamicsmodel\\definitions.jsbsimflightdynamicsmodel.h",
+            "d:\\usra_task8\\task8\\unrealengine\\plugins\\jsbsimflightdynamicsmodel\\source\\jsbsimflightdynamicsmodel\\public\\fdmtypes.h",
+            "d:\\usra_task8\\task8\\unrealengine\\plugins\\jsbsimflightdynamicsmodel\\intermediate\\build\\win64\\unrealeditor\\inc\\jsbsimflightdynamicsmodel\\uht\\fdmtypes.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-JSBSimFlightDynamicsModelEditor.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\USRA_Task8\Task8_daidulus\UnrealEngine\Intermediate\Build\Win64\x64\UEReferenceAppEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp17.InclOrderUnreal5_0.h.obj"
+"D:\USRA_Task8\Task8_daidulus\UnrealEngine\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\x64\UnrealEditor\Development\JSBSimFlightDynamicsModelEditor\Module.JSBSimFlightDynamicsModelEditor.cpp.obj"
+"D:\USRA_Task8\Task8_daidulus\UnrealEngine\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\x64\UnrealEditor\Development\JSBSimFlightDynamicsModelEditor\Default.rc2.res"
+/OUT:"D:\USRA_Task8\Task8_daidulus\UnrealEngine\Plugins\JSBSimFlightDynamicsModel\Intermediate\Build\Win64\x64\UnrealEditor\Development\JSBSimFlightDynamicsModelEditor\UnrealEditor-JSBSimFlightDynamicsModelEditor.lib"
